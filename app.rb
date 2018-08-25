@@ -1,6 +1,8 @@
 require "sinatra"
+require "sinatra/reloader" if development?
+
 class App < Sinatra::Base
-  get "/" do
-    "This is a test"
+  get "/index" do
+    erb :index
   end
 end
