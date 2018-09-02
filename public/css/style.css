@@ -3,16 +3,16 @@
     --blue: #003759;
     --dark-blue: rgb(1, 16, 32);
     --blue-gradient: linear-gradient(228deg, rgba(1, 16, 32, 1) 3%, rgba(0, 55, 89, 1) 40%);
-    --white: #F7F7F7;
+    --white: #F2F2F2;
     --red: #8d2f29;
-    --black: #0e0c15;
+    --black: #120F1C;
     --body-font: 'Pontano Sans', sans-serif;
     --title-font: 'Bevan', cursive;
     --bar-height: 50px;
     --padding: 30px;
 }
 
-.body {
+.body-under {
     background-image: url(/img/blue.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@
     background-size: auto;
 }
 
-.body-cover {
+.body {
     background-color: rgba(255,255,255,.8);
     height: 100%;
     width: 100%;
@@ -40,6 +40,7 @@
     grid-column-start: 2;
     background-color: var(--white);
     border-radius: 10px;
+    border: 1px dashed var(--red);
 }
 
 p {
