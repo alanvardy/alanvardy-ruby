@@ -8,40 +8,52 @@
     --black: #0e0c15;
     --body-font: 'Pontano Sans', sans-serif;
     --title-font: 'Bevan', cursive;
+    --bar-height: 50px;
+    --padding: 30px;
 }
 
 .body {
-    background-color: var(--white);
+    background-image: url(/img/blue.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+.body-cover {
+    background-color: rgba(255,255,255,.8);
+    height: 100%;
+    width: 100%;
     color: var(--black);
     font-family: var(--body-font);
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 1.2em;
     display: grid;
-    height: 100%;
     grid-template-columns: minmax(30px, 1fr) minmax(100px, 800px) minmax(30px, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 0px;
 }
 
 .text_container {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: calc(var(--bar-height) + var(--padding));
+    margin-bottom: calc(var(--bar-height) + var(--padding));
     grid-column-start: 2;
+    background-color: var(--white);
+    border-radius: 10px;
 }
 
 p {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: var(--padding);
 }
 
 .header {
-    padding-left: 20px;
+    padding-left: var(--padding);
     background: var(--dark-blue);
     background: var(--blue-gradient);
-    min-height: 50px;
-    margin-bottom: 20px;
+    min-height: var(--bar-height);
+    margin-bottom: var(--padding);
     color: var(--white);
-    font-size: 25px;
+    font-size: 1.6em;
     font-family: var(--title-font);
     position: fixed;
     top: 0;
@@ -53,12 +65,10 @@ p {
     color: var(--white);
     text-decoration: none;
     display: inline-block;
-    min-height: 50px;
-    line-height: 50px;
+    min-height: var(--bar-height);
+    line-height: var(--bar-height);
     vertical-align: center;
-    font-size: 25px;
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: var(--padding);
 }
 
 .header a:hover,
@@ -69,10 +79,10 @@ a.active {
 
 .footer {
     display: flex;
-    flex-direction: row-reverse;
-    min-height: 50px;
-    line-height: 50px;
-    vertical-align: center;
+    flex-direction: row;
+    min-height: var(--bar-height);
+    line-height: var(--bar-height);
+    vertical-align: calc(center - 50%);
     width: 100%;
     background: var(--dark-blue);
     background: var(--blue-gradient);
@@ -83,5 +93,13 @@ a.active {
     color: var(--white);
     text-decoration: none;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: var(--padding);
+    padding-left: var(--padding);
+}
+
+.footer a img {
+    margin-right: calc(var(--padding) * .5);
+    height: calc(var(--bar-height) * .6);
+    width: calc(var(--bar-height) * .6);
+    vertical-align: middle;
 }

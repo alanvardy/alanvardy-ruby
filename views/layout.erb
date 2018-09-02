@@ -16,19 +16,20 @@
 <body>
     <div class="header">
         <a class="<%= " active" if @title=="Home" %>" href="/">AlanVardy.com</a>
-        <a class="<%= " active" if @title=="Home" %>" href="/">|</a>
         <a class="<%= " active" if @title=="Blog" %>" href="/blog">Blog</a>
         <a class="<%= " active" if @title=="Portfolio" %>" href="/portfolio">Portfolio</a>
         <a class="<%= " active" if @title=="Resume" %>" href="/resume">Resume</a>
         <a class="<%= " active" if @title=="Contact" %>" href="/contact">Contact</a>
     </div>
     <div class="body">
-        <div class="text_container">
-            <%= yield %>
+        <div class="body-cover">
+            <div class="text_container">
+                <%= yield %>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <a href="https://github.com/alanvardy">Check out my Github</a>
+        <a href="https://github.com/alanvardy"><img src="img/github.png"> Check out my Github!</a>
     </div>
 </body>
 
