@@ -1,32 +1,87 @@
+:root {
+    --light-blue: #7CC5EB;
+    --blue: #003759;
+    --dark-blue: rgb(1, 16, 32);
+    --blue-gradient: linear-gradient(228deg, rgba(1, 16, 32, 1) 3%, rgba(0, 55, 89, 1) 40%);
+    --white: #F7F7F7;
+    --red: #8d2f29;
+    --black: #0e0c15;
+    --body-font: 'Pontano Sans', sans-serif;
+    --title-font: 'Bevan', cursive;
+}
+
+.body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--body-font);
+    font-size: 22px;
+    line-height: 30px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: minmax(30px, 1fr) minmax(100px, 800px) minmax(30px, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0px;
+}
+
+.text_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-column-start: 2;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 .header {
     padding-left: 20px;
-    background-color: black;
-    height: 50px;
+    background: var(--dark-blue);
+    background: var(--blue-gradient);
+    min-height: 50px;
     margin-bottom: 20px;
-    color: white;
+    color: var(--white);
     font-size: 25px;
+    font-family: var(--title-font);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     display: inline-block;
-    height: 50px;
+    min-height: 50px;
+    line-height: 50px;
+    vertical-align: center;
     font-size: 25px;
-    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .header a:hover,
+.footer a:hover,
 a.active {
-    color: lightblue;
+    color: var(--light-blue);
 }
 
 .footer {
-    height: 50px;
-    position: fixed;
-    z-index: 100;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 50px;
+    line-height: 50px;
+    vertical-align: center;
     width: 100%;
-    background-color: black;
+    background: var(--dark-blue);
+    background: var(--blue-gradient);
+    font-family: var(--title-font);
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
 }

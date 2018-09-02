@@ -4,24 +4,32 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>alanvardy.com | <%= @title %></title>
+    <title>alanvardy.com |
+        <%= @title %>
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Pontano+Sans" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
-        <a class="<%= "active" if @title == "Home" %>" href="/">alanvardy.com |</a>
-        <a class="<%= "active" if @title == "Blog" %>" href="/blog">Blog</a>
-        <a class="<%= "active" if @title == "Portfolio" %>" href="/portfolio">Portfolio</a>
-        <a class="<%= "active" if @title == "Resume" %>" href="/resume">Resume</a>
-        <a class="<%= "active" if @title == "Contact" %>" href="/contact">Contact</a>
+        <a class="<%= " active" if @title=="Home" %>" href="/">AlanVardy.com</a>
+        <a class="<%= " active" if @title=="Home" %>" href="/">|</a>
+        <a class="<%= " active" if @title=="Blog" %>" href="/blog">Blog</a>
+        <a class="<%= " active" if @title=="Portfolio" %>" href="/portfolio">Portfolio</a>
+        <a class="<%= " active" if @title=="Resume" %>" href="/resume">Resume</a>
+        <a class="<%= " active" if @title=="Contact" %>" href="/contact">Contact</a>
     </div>
     <div class="body">
-        <%= yield %>
+        <div class="text_container">
+            <%= yield %>
+        </div>
     </div>
-    <div class="footer">Something</div>
+    <div class="footer">
+        <a href="https://github.com/alanvardy">Check out my Github</a>
+    </div>
 </body>
 
 </html>
