@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
+  root 'static#index'
   get 'static/index'
   get 'static/portfolio'
   get 'static/resume'
