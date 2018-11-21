@@ -1,11 +1,11 @@
 <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <%= link_to 'alanvardy', root_path, class: 'navbar-brand'%>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-    <%= link_to 'Home', static_index_path, class: 'nav-item nav-link'%>
+    <%= link_to 'Home', root_path, class: 'nav-item nav-link'%>
     <%= link_to 'Blog', static_blog_path, class: 'nav-item nav-link'%>
     <%= link_to 'Portfolio', static_portfolio_path, class: 'nav-item nav-link'%>
     <%= link_to 'Resume', static_resume_path, class: 'nav-item nav-link'%>
