@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'setup/ubuntu'
+  get 'setup/zsh'
+  get 'setup/ruby'
+  get 'setup/vscode'
+  get 'setup/gnome'
+  get 'setup/index'
   root 'static#index'
   get 'static/index'
   get 'static/portfolio'
