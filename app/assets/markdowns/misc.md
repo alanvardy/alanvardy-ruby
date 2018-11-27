@@ -26,3 +26,7 @@ Check to make sure SSH to Github works with your key
 ```bash
 ssh -T git@github.com
 ```
+
+And finally don't forget to set up:
+
+- Email signatures

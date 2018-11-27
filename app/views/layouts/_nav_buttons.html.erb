@@ -1,0 +1,17 @@
+ <div class="row my-3">
+  <div class="col-4 d-flex justify-content-start">
+    <%= link_to yield(:back_path), class: 'btn btn-sm btn-outline-dark m-3' do %>
+      <i class="fas fa-arrow-left"></i> <%= yield(:back) %>
+    <% end %>
+  </div>
+  <div class="col-4 d-flex justify-content-center">
+    <%= link_to yield(:up_path), class: 'btn btn-sm btn-outline-dark m-3' do %>
+      <i class="fas fa-arrow-up"></i> <%= yield(:up) %>
+    <% end %>
+  </div>
+  <div class="col-4 d-flex justify-content-end">
+    <%= link_to yield(:forward_path), class: 'btn btn-sm btn-outline-dark m-3' do %>
+      <i class="fas fa-arrow-right"></i> <%= yield(:forward) %>
+    <% end %>
+  </div>
+ </div>
