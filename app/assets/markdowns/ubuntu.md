@@ -2,7 +2,8 @@
 
 Last Updated: 27 Nov 2018
 
-Install the [latest version of Ubuntu](https://www.ubuntu.com/download/desktop)
+Install the [latest version of Ubuntu](https://www.ubuntu.com/download/desktop).
+
 This code can be run as a shell script and just pasted in the terminal
 
 ```bash
