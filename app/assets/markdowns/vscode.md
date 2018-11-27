@@ -1,4 +1,4 @@
-# VS CODE
+# 5. Visual Studio Code
 
 Last Updated: 27 Nov 2018
 

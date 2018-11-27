@@ -1,5 +1,7 @@
 <% provide(:title, "Ubuntu") %>
+<% provide(:higher, "Setup") %>
+<% provide(:higher_path, setup_index_path) %>
 
 <%=  markdown('ubuntu.md') %>
 
-<p>back to <%= link_to 'Setup', setup_index_path %></p>
+<%= render 'layouts/backbutton' %>

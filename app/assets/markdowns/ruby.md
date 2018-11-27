@@ -1,4 +1,5 @@
-# Installing RBENV and Ruby on Linux
+# 3. Installing rbenv and Ruby on Linux
+
 Last Updated: 26 Nov 2018, Credit to: [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/installing-ruby?ref=lnav)
 
 Update:
@@ -14,7 +15,7 @@ Install misc packages:
 sudo apt-get install curl git nodejs gcc make libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev
 ```
 
-Install Rbenv: (last command closes your terminal deliberately)
+Install rbenv: (last command closes your terminal deliberately)
 
 ```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv

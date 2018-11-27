@@ -1,4 +1,4 @@
-# Zsh
+# 4. Zsh
 
 Last Updated: 27 Nov 2018, Credit to: [Renshuki](https://gist.github.com/renshuki/)
 
@@ -147,5 +147,6 @@ function gitall() {
 }
 
 alias ber="bundle exec rspec"
-alias deploy="git checkout master; git pull origin master; git push origin master; git push heroku master; git removed-branches --prune; exit"
+alias deploy="git checkout master; git pull origin master; git push origin master; git push heroku master; git removed-branches --prune"
+alias prune="git removed-branches --prune"
 ```
