@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'setup/vscode'
   get 'setup/gnome'
   get 'setup/index'
+  get 'setup/misc'
   root 'static#index'
   get 'static/index'
   get 'static/portfolio'

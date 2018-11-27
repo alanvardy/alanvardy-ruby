@@ -1,4 +1,4 @@
-# Ubuntu
+# 1. Ubuntu Linux
 
 Last Updated: 27 Nov 2018
 
@@ -58,7 +58,7 @@ sudo apt install -y gnome-tweak-tool
 sudo apt install -y sudo snap install mailspring
 sudo apt install -y network-manager-openvpn-gnome
 sudo apt install -y dconf-cli
-
+sudo apt install -y npm
 sudo apt install -y git
 sudo snap install gitkraken
 sudo snap install postman
@@ -69,6 +69,8 @@ sudo snap install teleconsole --classic
 sudo snap install inkscape
 sudo snap install heroku --classic
 sudo snap install mailspring
+sudo snap install libreoffice
+sudo npm install -g git-removed-branches
 
 echo "INSTALL LAPTOP TOUCHPAD APP?"
 sudo apt install -y touchpad-indicator
