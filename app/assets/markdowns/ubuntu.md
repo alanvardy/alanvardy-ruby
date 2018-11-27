@@ -1,11 +1,13 @@
 # Ubuntu
 
+Last Updated: 27 Nov 2018
+
 Install the [latest version of Ubuntu](https://www.ubuntu.com/download/desktop)
-Run the following as either a shell script or just copy and paste into the terminal:
+This code can be run as a shell script and just pasted in the terminal
 
 ```bash
 #!/bin/bash
-# chmod +x <fileName>
+# chmod +x fileName.sh to run as a shell script
 
 sudo apt install -y curl
 
@@ -56,7 +58,7 @@ sudo apt install -y gnome-tweak-tool
 sudo apt install -y sudo snap install mailspring
 sudo apt install -y network-manager-openvpn-gnome
 sudo apt install -y dconf-cli
-sudo apt install -y zsh
+
 sudo apt install -y git
 sudo snap install gitkraken
 sudo snap install postman
