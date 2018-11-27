@@ -20,12 +20,6 @@
   font-size: 1rem;
 }
 
-.svg {
-  height: 1rem;
-  width: 1rem;
-  fill: $white;
-}
-
 .highlight {
 
   border-radius: 5px;
@@ -35,184 +29,184 @@
   padding: 10px;
   padding-bottom: 0px;
   margin-bottom: 20px;
-}
 
-.highlight pre {
-  padding-bottom: 10px;
-}
+  pre {
+    padding-bottom: 10px;
+  }
 
-.highlight code,
-.highlight pre {
-  color: #fdce93;
-  background-color: #3f3f3f;
-}
+  code,
+  pre {
+    color: #fdce93;
+    background-color: #3f3f3f;
+  }
 
-.highlight .hll {
-  background-color: #222;
-}
+  .hll {
+    background-color: #222;
+  }
 
-.highlight .err {
-  color: #e37170;
-  background-color: #3d3535;
-}
+  .err {
+    color: #e37170;
+    background-color: #3d3535;
+  }
 
-.highlight .k {
-  color: #f0dfaf;
-}
+  .k {
+    color: #f0dfaf;
+  }
 
-.highlight .p {
-  color: #41706f;
-}
+  .p {
+    color: #41706f;
+  }
 
-.highlight .cs {
-  color: #cd0000;
-  font-weight: 700;
-}
+  .cs {
+    color: #cd0000;
+    font-weight: 700;
+  }
 
-.highlight .gd {
-  color: #cd0000;
-}
+  .gd {
+    color: #cd0000;
+  }
 
-.highlight .ge {
-  color: #ccc;
-  font-style: italic;
-}
+  .ge {
+    color: #ccc;
+    font-style: italic;
+  }
 
-.highlight .gr {
-  color: red;
-}
+  .gr {
+    color: red;
+  }
 
-.highlight .go {
-  color: gray;
-}
+  .go {
+    color: gray;
+  }
 
-.highlight .gs {
-  color: #ccc;
-  font-weight: 700;
-}
+  .gs {
+    color: #ccc;
+    font-weight: 700;
+  }
 
-.highlight .gu {
-  color: purple;
-  font-weight: 700;
-}
+  .gu {
+    color: purple;
+    font-weight: 700;
+  }
 
-.highlight .gt {
-  color: #0040D0;
-}
+  .gt {
+    color: #0040D0;
+  }
 
-.highlight .kc {
-  color: #dca3a3;
-}
+  .kc {
+    color: #dca3a3;
+  }
 
-.highlight .kd {
-  color: #ffff86;
-}
+  .kd {
+    color: #ffff86;
+  }
 
-.highlight .kn {
-  color: #dfaf8f;
-  font-weight: 700;
-}
+  .kn {
+    color: #dfaf8f;
+    font-weight: 700;
+  }
 
-.highlight .kp {
-  color: #cdcf99;
-}
+  .kp {
+    color: #cdcf99;
+  }
 
-.highlight .kr {
-  color: #cdcd00;
-}
+  .kr {
+    color: #cdcd00;
+  }
 
-.highlight .ni {
-  color: #c28182;
-}
+  .ni {
+    color: #c28182;
+  }
 
-.highlight .ne {
-  color: #c3bf9f;
-  font-weight: 700;
-}
+  .ne {
+    color: #c3bf9f;
+    font-weight: 700;
+  }
 
-.highlight .nn {
-  color: #8fbede;
-}
+  .nn {
+    color: #8fbede;
+  }
 
-.highlight .vi {
-  color: #ffffc7;
-}
+  .vi {
+    color: #ffffc7;
+  }
 
-.highlight .c,
-.preview-zenburn .highlight .g,
-.preview-zenburn .highlight .cm,
-.preview-zenburn .highlight .cp,
-.preview-zenburn .highlight .c1 {
-  color: #7f9f7f;
-}
+  .c,
+  .preview-zenburn .highlight .g,
+  .preview-zenburn .highlight .cm,
+  .preview-zenburn .highlight .cp,
+  .preview-zenburn .highlight .c1 {
+    color: #7f9f7f;
+  }
 
-.highlight .l,
-.preview-zenburn .highlight .x,
-.preview-zenburn .highlight .no,
-.preview-zenburn .highlight .nd,
-.preview-zenburn .highlight .nl,
-.preview-zenburn .highlight .nx,
-.preview-zenburn .highlight .py,
-.preview-zenburn .highlight .w {
-  color: #ccc;
-}
+  .l,
+  .preview-zenburn .highlight .x,
+  .preview-zenburn .highlight .no,
+  .preview-zenburn .highlight .nd,
+  .preview-zenburn .highlight .nl,
+  .preview-zenburn .highlight .nx,
+  .preview-zenburn .highlight .py,
+  .preview-zenburn .highlight .w {
+    color: #ccc;
+  }
 
-.highlight .n,
-.preview-zenburn .highlight .nv,
-.preview-zenburn .highlight .vg {
-  color: #dcdccc;
-}
+  .n,
+  .preview-zenburn .highlight .nv,
+  .preview-zenburn .highlight .vg {
+    color: #dcdccc;
+  }
 
-.highlight .o,
-.preview-zenburn .highlight .ow {
-  color: #f0efd0;
-}
+  .o,
+  .preview-zenburn .highlight .ow {
+    color: #f0efd0;
+  }
 
-.highlight .gh,
-.preview-zenburn .highlight .gp {
-  color: #dcdccc;
-  font-weight: 700;
-}
+  .gh,
+  .preview-zenburn .highlight .gp {
+    color: #dcdccc;
+    font-weight: 700;
+  }
 
-.highlight .gi,
-.preview-zenburn .highlight .kt {
-  color: #00cd00;
-}
+  .gi,
+  .preview-zenburn .highlight .kt {
+    color: #00cd00;
+  }
 
-.highlight .ld,
-.preview-zenburn .highlight .s,
-.preview-zenburn .highlight .sb,
-.preview-zenburn .highlight .sc,
-.preview-zenburn .highlight .sd,
-.preview-zenburn .highlight .s2,
-.preview-zenburn .highlight .se,
-.preview-zenburn .highlight .sh,
-.preview-zenburn .highlight .si,
-.preview-zenburn .highlight .sx,
-.preview-zenburn .highlight .sr,
-.preview-zenburn .highlight .s1,
-.preview-zenburn .highlight .ss {
-  color: #cc9393;
-}
+  .ld,
+  .preview-zenburn .highlight .s,
+  .preview-zenburn .highlight .sb,
+  .preview-zenburn .highlight .sc,
+  .preview-zenburn .highlight .sd,
+  .preview-zenburn .highlight .s2,
+  .preview-zenburn .highlight .se,
+  .preview-zenburn .highlight .sh,
+  .preview-zenburn .highlight .si,
+  .preview-zenburn .highlight .sx,
+  .preview-zenburn .highlight .sr,
+  .preview-zenburn .highlight .s1,
+  .preview-zenburn .highlight .ss {
+    color: #cc9393;
+  }
 
-.highlight .m,
-.preview-zenburn .highlight .mf,
-.preview-zenburn .highlight .mh,
-.preview-zenburn .highlight .mi,
-.preview-zenburn .highlight .mo,
-.preview-zenburn .highlight .il {
-  color: #8cd0d3;
-}
+  .m,
+  .preview-zenburn .highlight .mf,
+  .preview-zenburn .highlight .mh,
+  .preview-zenburn .highlight .mi,
+  .preview-zenburn .highlight .mo,
+  .preview-zenburn .highlight .il {
+    color: #8cd0d3;
+  }
 
-.highlight .na,
-.preview-zenburn .highlight .nt {
-  color: #9ac39f;
-}
+  .na,
+  .preview-zenburn .highlight .nt {
+    color: #9ac39f;
+  }
 
-.highlight .nb,
-.preview-zenburn .highlight .nc,
-.preview-zenburn .highlight .nf,
-.preview-zenburn .highlight .bp,
-.preview-zenburn .highlight .vc {
-  color: #efef8f;
+  .nb,
+  .preview-zenburn .highlight .nc,
+  .preview-zenburn .highlight .nf,
+  .preview-zenburn .highlight .bp,
+  .preview-zenburn .highlight .vc {
+    color: #efef8f;
+  }
 }
