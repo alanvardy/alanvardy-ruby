@@ -20,6 +20,10 @@ Notifications:
 
 - Notification popups: off
 
+Power:
+
+- Everything off!
+
 ## Gnome Tweaks
 
 Desktop:

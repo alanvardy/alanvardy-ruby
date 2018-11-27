@@ -1,7 +1,14 @@
 <% provide(:title, "Ubuntu") %>
-<% provide(:higher, "Setup") %>
-<% provide(:higher_path, setup_index_path) %>
+
+<% provide(:back, nil) %>
+<% provide(:back_path, nil) %>
+<% provide(:up, "Setup") %>
+<% provide(:up_path, setup_index_path) %>
+<% provide(:forward, 'Gnome Settings') %>
+<% provide(:forward_path, setup_gnome_path) %>
+
+<%= render 'layouts/nav_buttons' %>
 
 <%=  markdown('ubuntu.md') %>
 
-<%= render 'layouts/backbutton' %>
+<%= render 'layouts/nav_buttons' %>

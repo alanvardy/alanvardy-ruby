@@ -148,5 +148,5 @@ function gitall() {
 
 alias ber="bundle exec rspec"
 alias deploy="git checkout master; git pull origin master; git push origin master; git push heroku master; git removed-branches --prune"
-alias prune="git removed-branches --prune"
+alias prune="git checkout master; git pull; git fetch -p; git removed-branches --prune"
 ```

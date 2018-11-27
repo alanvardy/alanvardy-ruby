@@ -1,7 +1,14 @@
-<% provide(:title, "Ruby") %>
-<% provide(:higher, "Setup") %>
-<% provide(:higher_path, setup_index_path) %>
+<% provide(:title, "rbenv and Ruby") %>
+
+<% provide(:back, "Gnome Settings") %>
+<% provide(:back_path, setup_gnome_path) %>
+<% provide(:up, "Setup") %>
+<% provide(:up_path, setup_index_path) %>
+<% provide(:forward, 'Zsh') %>
+<% provide(:forward_path, setup_zsh_path) %>
+
+<%= render 'layouts/nav_buttons' %>
 
 <%= markdown('ruby.md') %>
 
-<%= render 'layouts/backbutton' %>
+<%= render 'layouts/nav_buttons' %>
