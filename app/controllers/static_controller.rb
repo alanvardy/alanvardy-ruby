@@ -1,16 +1,11 @@
+# frozen_string_literal: true
+
 class StaticController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def portfolio
-  end
+  def portfolio; end
 
-  def resume
-  end
+  def resume; end
 
-  def contact
-  end
-
-  def blog
-  end
+  def contact; end
 end

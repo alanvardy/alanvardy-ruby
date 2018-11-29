@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :users
+  resources :posts
   get 'setup/ubuntu'
   get 'setup/zsh'
   get 'setup/ruby'
@@ -14,6 +16,5 @@ Rails.application.routes.draw do
   get 'static/portfolio'
   get 'static/resume'
   get 'static/contact'
-  get 'static/blog'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
