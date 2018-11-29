@@ -1,14 +1,22 @@
 # 1. Ubuntu Linux
 
-Last Updated: 27 Nov 2018
+Last Updated: 29 Nov 2018
 
-Install the [latest version of Ubuntu](https://www.ubuntu.com/download/desktop).
+Download and install the [latest version of Ubuntu Linux](https://www.ubuntu.com/download/desktop).
 
-This code can be run as a shell script and just pasted in the terminal
+Create a shell script
+
+```bash
+gedit install.sh
+#paste in the next code block and save
+chmod +x install.sh
+./install.sh
+```
+
+The content of install.sh:
 
 ```bash
 #!/bin/bash
-# chmod +x fileName.sh to run as a shell script
 
 sudo apt install -y curl
 
@@ -39,6 +47,7 @@ sudo apt install -y okular
 sudo apt install -y vlc
 sudo apt install -y xchm
 sudo apt install -y git-cola
+sudo apt install -y chrome-gnome-shell
 sudo apt install -y terminator
 sudo apt install -y dukto
 sudo apt install -y nodejs
@@ -81,8 +90,6 @@ sudo apt remove aisleriot
 sudo apt remove kdeconnect
 sudo apt remove gnome-mahjongg
 sudo apt remove gnome-mines
-sudo apt remove libreoffice-core
-sudo apt remove libreoffice-common
 sudo apt remove remmina
 sudo apt remove rhythmbox
 sudo apt remove simple-scan

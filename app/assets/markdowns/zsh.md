@@ -4,9 +4,11 @@ Last Updated: 27 Nov 2018, Credit to: [Renshuki](https://gist.github.com/renshuk
 
 ```bash
 sudo apt-get install zsh fonts-powerline
-chsh -s \$(which zsh)
-# logout and back in
-sh -c "\$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+# restart the computer
+sudo shutdown -r 0
+
 ```
 
 Install donf:
@@ -150,3 +152,5 @@ alias ber="bundle exec rspec"
 alias deploy="git checkout master; git pull origin master; git push origin master; git push heroku master; git removed-branches --prune"
 alias prune="git checkout master; git pull; git fetch -p; git removed-branches --prune"
 ```
+
+Close and reopen your terminal

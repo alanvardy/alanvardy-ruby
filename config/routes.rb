@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'setup/gnome'
   get 'setup/index'
   get 'setup/misc'
+  get 'setup/issues'
   root 'static#index'
   get 'static/index'
   get 'static/portfolio'
