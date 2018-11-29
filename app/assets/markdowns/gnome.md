@@ -1,6 +1,6 @@
 # 2. Gnome Settings
 
-Last Updated: 27 Nov 2018
+Last Updated: 29 Nov 2018
 
 ## Install Gnome Extensions
 
@@ -32,7 +32,15 @@ Desktop:
 
 Extensions:
 
-- Turn on Dash to Panel and configure
+Turn on Dash to Panel and configure
+
+  - Position and Style:
+    - Panel screen position: top
+    - Panel size: 36
+    - App Icon margin: 6
+    - App Icon Padding: 4
+  - Behavior
+    - Isolate Workspaces
 
 Keyboard and mouse (Mouse click emulation):
 

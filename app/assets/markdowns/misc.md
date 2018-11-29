@@ -27,6 +27,13 @@ Check to make sure SSH to Github works with your key
 ssh -T git@github.com
 ```
 
+Install Inconsolata font
+
+```bash
+sudo apt-get install fonts-inconsolata -y
+sudo fc-cache -fv
+```
+
 And finally don't forget to set up:
 
 - Email signatures
