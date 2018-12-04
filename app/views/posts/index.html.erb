@@ -27,5 +27,7 @@
 </table>
 
 <br>
+<% if session[:current_user] %>
+  <%= link_to 'New Post', new_post_path %>
+<% end %>
 
-<%= link_to 'New Post', new_post_path %>

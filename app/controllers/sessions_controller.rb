@@ -10,19 +10,26 @@ class SessionsController < ApplicationController
               # for normal application this is bad idea but for one
               # user login no-one care
 
-    user_params = params.permit(:username, :password)
+    user_params = params.require(:user).permit(:username, :password)
 
-    @user = User.new(user_params[:username], user_params[:password])
-      # .tap { |su| su.username = user_params[:username] }
-      # .tap { |su| su.password = user_params[:password] }
+    @user = User.new
+    @user.username = user_params[:username]
+    @user.password = user_params[:password]
 
     if @user.login_valid?
       session[:current_user] = true
+      flash[:success] = 'You have logged in'
       redirect_to posts_path
     else
       @user.password = nil
-      flash[:notice] = 'Sorry, wrong credentils'
+      flash[:notice] = 'Sorry, wrong credentials'
       render 'new'
     end
+  end
+
+  def destroy
+    reset_session
+    flash[:success] = 'You have logged out'
+    redirect_to root_path
   end
 end

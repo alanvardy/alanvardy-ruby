@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'sessions/new'
-  resources :sessions, only: [:create, :new]
+  get 'login', to: 'sessions#new'
+  resources :sessions, only: [:create, :new, :destroy]
   resources :posts
+  get 'sessions/new'
   get 'setup/ubuntu'
   get 'setup/zsh'
   get 'setup/ruby'
