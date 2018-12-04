@@ -1,0 +1,21 @@
+<div class="content">
+    <section>
+      <div style="color: red;"><%= flash[:notice] if flash[:notice]  %></div>
+
+      <%= form_for @user, url: sessions_path do |f| %>
+        <div>
+          <%= f.label :username %>
+          <%= f.text_field :username %>
+        </div>
+
+        <div>
+          <%= f.label :password %>
+          <%= f.password_field :password %>
+        </div>
+
+        <div>
+          <%= f.submit 'Log In' %>
+        </div>
+      <% end %>
+    </section>
+</div>

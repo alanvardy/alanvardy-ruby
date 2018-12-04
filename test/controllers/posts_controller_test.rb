@@ -10,17 +10,17 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
+  test "shouldn't get new post without login" do
     get new_post_url
-    assert_response :success
+    assert_redirected_to sessions_new_path
   end
 
-  test "should create post" do
-    assert_difference('Post.count') do
+  test "shouldn't create post without login" do
+    assert_no_difference('Post.count') do
       post posts_url, params: { post: { content: @post.content, title: @post.title } }
     end
 
-    assert_redirected_to post_url(Post.last)
+    assert_redirected_to sessions_new_path
   end
 
   test "should show post" do
@@ -35,14 +35,21 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should update post" do
     patch post_url(@post), params: { post: { content: @post.content, title: @post.title } }
-    assert_redirected_to post_url(@post)
+    assert_redirected_to sessions_new_path
   end
 
-  test "should destroy post" do
-    assert_difference('Post.count', -1) do
+  test "shouldn't destroy post without login" do
+    assert_no_difference('Post.count', -1) do
       delete post_url(@post)
     end
 
-    assert_redirected_to posts_url
+    assert_redirected_to sessions_new_path
+  end
+
+  test "can destroy post with login" do
+    login_user
+    assert_difference('Post.count', -1) do
+      delete post_url(@post)
+    end
   end
 end

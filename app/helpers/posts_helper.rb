@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module PostsHelper
-
   require 'redcarpet'
   require 'rouge'
   require 'rouge/plugins/redcarpet'
@@ -12,7 +11,7 @@ module PostsHelper
     end
     include Rouge::Plugins::Redcarpet
   end
-  
+
   def markdown_text(text)
     Redcarpet::Markdown.new(BlogRender, fenced_code_blocks: true).render(text).html_safe
   end

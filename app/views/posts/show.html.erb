@@ -7,7 +7,12 @@
 
 <p>
   <strong>Content:</strong>
-  <%= markdown_text(@post.content) %>
+  <%= @post.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
