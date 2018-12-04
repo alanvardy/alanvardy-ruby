@@ -21,9 +21,4 @@ class StaticControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get blog" do
-    get static_blog_url
-    assert_response :success
-  end
-
 end
