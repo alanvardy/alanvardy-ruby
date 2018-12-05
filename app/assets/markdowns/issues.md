@@ -1,6 +1,8 @@
-# 7. Issues
+# 8. Issues
 
 Last Updated: 29 Nov 2018
+
+Linux has issues, these are the ones that I encounter.
 
 ## Bluetooth mouse won't stay connected
 

@@ -2,6 +2,8 @@
 
 Last Updated: 29 Nov 2018
 
+Gnome is most popular desktop manager. It can be bloated at times, but if you set it up well and have good enough hardware it can be the best experience.
+
 ## Install Gnome Extensions
 
 [Gnome Extensions](https://extensions.gnome.org/)

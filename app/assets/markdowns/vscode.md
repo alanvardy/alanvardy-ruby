@@ -1,6 +1,8 @@
-# 5. Visual Studio Code
+# 6. Visual Studio Code
 
 Last Updated: 27 Nov 2018
+
+My favourite code editor.
 
 This one is easy! Install the [settings sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) and use the gist:
 

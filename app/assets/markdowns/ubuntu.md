@@ -2,7 +2,7 @@
 
 Last Updated: 29 Nov 2018
 
-Download and install the [latest version of Ubuntu Linux](https://www.ubuntu.com/download/desktop).
+Download and install [Ubuntu Linux 18.10](https://www.ubuntu.com/download/desktop).
 
 Create a shell script
 
@@ -21,7 +21,7 @@ The content of install.sh:
 sudo apt install -y curl
 
 echo "ADDING REPOSITORIES"
-for f in  ppa:linuxgndu/sqlitebrowser ppa:obsproject/obs-studio ; do sudo add-apt-repository $f; done
+for f in  ppa:obsproject/obs-studio ; do sudo add-apt-repository $f; done
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'

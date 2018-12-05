@@ -1,0 +1,16 @@
+<% provide(:title, "Albert") %>
+
+<% provide(:back, "Zsh") %>
+<% provide(:back_path, setup_zsh_path) %>
+<% provide(:up, "Setup") %>
+<% provide(:up_path, setup_index_path) %>
+<% provide(:forward, 'Visual Studio Code') %>
+<% provide(:forward_path, setup_vscode_path) %>
+
+<%= render 'layouts/nav_buttons' %>
+
+<%= image_tag 'albert.png', class: 'mx-auto d-block d-sm-none my-3 w-100' %>
+<%= image_tag 'albert.png', class: 'mx-auto d-sm-block d-none my-3 w-50' %>
+<%= markdown_file('albert.md') %>
+
+<%= render 'layouts/nav_buttons' %>
