@@ -54,8 +54,8 @@ Power: (Suspend when laptop lid is closed)
 
 Startup Applications:
 
-- Slack
-- Mailspring
+- slack
+- mailspring -b
 
 Workspaces:
 
