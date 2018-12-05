@@ -1,6 +1,8 @@
-# 6. Miscellaneous
+# 7. Miscellaneous
 
 Last Updated: 27 Nov 2018, Credit to: [Bryce Johnston](https://gist.github.com/beaorn)
+
+Small items that don't get their own page.
 
 Add Git information:
 

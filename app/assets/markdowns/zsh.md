@@ -2,6 +2,8 @@
 
 Last Updated: 27 Nov 2018, Credit to: [Renshuki](https://gist.github.com/renshuki/)
 
+I like a pretty terminal.
+
 ```bash
 sudo apt-get install zsh fonts-powerline
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
@@ -34,7 +36,7 @@ echo 'source $HOME/.zshenv' >> ~/.zshrc
 exec $SHELL
 ```
 
-Replace ~/.zshrc with this:
+Replace ~/.zshrc with this (don't forget to change default user if you are not me!):
 
 ```bash
 # If you come from bash you might have to change your $PATH.
@@ -104,7 +106,7 @@ eval `dircolors ~/.dir_colors/dircolors`
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git rails rails3 ruby capistrano bundler heroku rake rvm autojump command-not-found python pip github gnu-utils history-substring-search zsh-syntax-highlighting)
 
-RPROMPT='%{$fg[yellow]%}$(rbenv version-name)%{$reset_color%}%'
+RPROMPT='%{$fg[yellow]%}[%*]%{$reset_color%}%'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,6 +130,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+DEFAULT_USER=vardy #YOU NEED TO CHANGE THIS
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -148,6 +152,9 @@ function gitall() {
     git push origin HEAD
 }
 
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
 alias ber="bundle exec rspec"
 alias deploy="git checkout master; git pull origin master; git push origin master; git push heroku master; git removed-branches --prune"
 alias prune="git checkout master; git pull; git fetch -p; git removed-branches --prune"

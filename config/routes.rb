@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'setup/ruby'
   get 'setup/vscode'
   get 'setup/gnome'
+  get 'setup/albert'
   get 'setup/index'
   get 'setup/misc'
   get 'setup/issues'
