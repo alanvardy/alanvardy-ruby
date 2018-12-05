@@ -130,7 +130,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-DEFAULT_USER=vardy #YOU NEED TO CHANGE THIS
+DEFAULT_USER=vardy
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -152,12 +152,10 @@ function gitall() {
     git push origin HEAD
 }
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
+alias hl="heroku local"
+alias gs="git status"
 alias ber="bundle exec rspec"
 alias deploy="git checkout master; git pull origin master; git push origin master; git push heroku master; git removed-branches --prune"
-alias prune="git checkout master; git pull; git fetch -p; git removed-branches --prune"
 ```
 
 Close and reopen your terminal
