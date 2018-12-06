@@ -14,7 +14,7 @@
 <div class="row">
     <% portfolio.each do |item| %>
     <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center pt-5">
-        <div class="card" style="width: 18rem;">
+        <div class="card shadow-sm" style="width: 18rem;">
             <a href="<%= item[:website] %>"><%= image_tag "portfolio/#{item[:image]}", class: 'card-img-top w-100' %></a>
             <div class="card-body">
                 <h5 class="card-title"><%= item[:title] %></h5>

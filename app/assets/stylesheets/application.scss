@@ -20,12 +20,19 @@ $white: #FFFEFA;
 $orange: #8b210b;
 $danger: #8d2f29;
 
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+$title-font: 'Bitter',
+serif;
 
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 
+h1,
+h2 {
+  font-family: $title-font;
+}
 
 .fab {
   font-size: 1rem;
