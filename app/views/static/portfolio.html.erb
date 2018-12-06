@@ -1,18 +1,30 @@
 <% provide(:title, "Portfolio") %>
 <h1 class="display-5">Portfolio</h1>
-<p>My work</p>
-<p>
-    <a href="http://yegrb.com/">YEGRB: Edmonton's Ruby Meetup</a>
-</p>
-<p>
-    <a href="https://www.corneliakelinske.com/">Cornelia Kelinske - Professional Translator and Interpreter</a>
-</p>
-<p>
-    <a href="https://alanvardy-calculator.herokuapp.com/index.html">An in-browser calculator</a>
-</p>
-<p>
-    <a href="https://github.com/alanvardy">Github Profile</a>
-</p>
-<p>
-    <a href="https://exercism.io/profiles/alanvardy">Exercism Profile</a>
-</p>
+<% portfolio = [
+    {title: "YEGRB", description: "Edmonton's Ruby Meetup", website: "https://www.yegrb.com/",
+    github: "https://github.com/yegrb/yegrb.github.io",image: "yegrb.png" },
+    {title: "Cornelia Kelinske", description: "Professional Translator and Interpreter", website: "https://www.corneliakelinske.com/",
+    github: "#",image: "corneliakelinske.png" },
+    {title: "Browser Calculator", description: "An exercise in javascript", website: "https://alanvardy-calculator.herokuapp.com/",
+    github: "https://github.com/alanvardy/calculator",image: "calculator.png" },
+    {title: "Exercism", description: "Improving coding skills through practice and mentorship", website: "https://exercism.io/profiles/alanvardy",
+    github: "https://github.com/alanvardy/exercism",image: "exercism.png" },
+] %>
+
+<div class="row">
+    <% portfolio.each do |item| %>
+    <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center pt-5">
+        <div class="card" style="width: 18rem;">
+            <a href="<%= item[:website] %>"><%= image_tag "portfolio/#{item[:image]}", class: 'card-img-top w-100' %></a>
+            <div class="card-body">
+                <h5 class="card-title"><%= item[:title] %></h5>
+                <p class="card-text"><%= item[:description] %></p>
+                <a href="<%= item[:website] %>" class="btn btn-primary">Website</a>
+                <% if item[:github] != "#" %>
+                    <a href="<%= item[:github] %>" class="btn btn-info">Github</a>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <% end %>
+</div>
