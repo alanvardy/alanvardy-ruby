@@ -1,0 +1,9 @@
+    <h2><%= post.title %></h2>
+    <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
+    <%= link_to 'View Post', post, class: "btn btn-sm btn-outline-dark"%>
+        <% if session[:current_user] %>
+      <%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-outline-warning" %>
+      <%= link_to 'Destroy', post, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %>
+    <% end %>
+    <p><%= markdown_text(post.content) %></p>
+    <p>Alan Vardy</p>

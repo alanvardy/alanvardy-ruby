@@ -19,8 +19,9 @@
 <% end %>
     <%= yield %>
   <% if session[:current_user] %>
-  <p>
-    <%= link_to 'Log out', session_path('logout'), method: :delete, class: 'btn btn-outline-primary mt-5' %>
+  <p class="mt-5">
+    <%= link_to 'New Post', new_post_path, class: "btn btn-outline-primary" %>
+    <%= link_to 'Log out', session_path('logout'), method: :delete, class: 'btn btn-outline-primary' %>
   </p>
   <% end %>
   </div>
