@@ -11,8 +11,8 @@ class StaticControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get resume" do
-    get static_resume_url
+  test "should get aboutme" do
+    get static_aboutme_url
     assert_response :success
   end
 
