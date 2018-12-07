@@ -34,6 +34,16 @@ h2 {
   font-family: $title-font;
 }
 
+.nostyle {
+  text-decoration: none;
+  color: $grey;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
 .fab {
   font-size: 1rem;
 }
