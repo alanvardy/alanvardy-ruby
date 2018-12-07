@@ -1,11 +1,16 @@
     <div class="border-bottom border-grey">
       <h2><%= post.title %></h2>
       <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
-      <%= link_to 'View Post', post, class: "btn btn-sm btn-outline-dark"%>
           <% if session[:current_user] %>
         <%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-outline-warning" %>
         <%= link_to 'Destroy', post, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %>
       <% end %>
-      <p><%= markdown_text(post.content) %></p>
-      <p>Alan Vardy</p>
+          <% if params[:id].nil? %>
+          <p><%= markdown_text(post.content.truncate(200)) %></p>
+          <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-dark"%></p>
+      <% else %>
+        <p><%= markdown_text(post.content) %></p>
+      <% end %>
+
+      <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com" class="nostyle-2">Alan Vardy</a></small></p>
     </div>
