@@ -44,6 +44,16 @@ h2 {
   }
 }
 
+.nostyle-2 {
+  text-decoration: none;
+  color: $grey;
+
+  &:hover {
+    color: $grey;
+    text-decoration: underline;
+  }
+}
+
 .fab {
   font-size: 1rem;
 }
@@ -57,6 +67,8 @@ body {
 .container {
   background-color: $white;
 }
+
+// application.scss
 
 .highlight {
 
