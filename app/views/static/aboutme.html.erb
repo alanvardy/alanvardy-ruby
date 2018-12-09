@@ -1,3 +1,30 @@
 <% provide(:title, "About Me") %>
 <h1>About Me</h1>
-<p>Coming soon!</p>
+<p>
+    This is the part where I get to talk about myself! Other than pure self-indulgence,
+    I am creating this page so that you can understand a little bit more about who I am and where I come from.
+</p>
+<h2>I'm a Canadian and a New Zealander</h2>
+<p>
+    I was born and raised in the land of sheep, kiwis, and hobbits. I have lived in a few different countries and value those experiences.
+</p>
+<%= render 'layouts/mdimage', locals: {folder: "static", filename: "newzealand.jpg"} %>
+<h2>I'm a father and a husband</h2>
+<p>And this is my family!</p>
+<%= render 'layouts/mdimage', locals: {folder: "static", filename: "family.jpg"} %>
+<h2>I spent 5 years in the Canadian Forces</h2>
+<p>
+    Lets just say that the Combat Engineers have fantastic recruiting videos, and that Afghanistan had a lot of sand but no beaches.
+</p>
+<%= render 'layouts/lgimage', locals: {folder: "static", filename: "combatengineer.jpg"} %>
+<h2>I am a Journeyman Refrigeration Mechanic</h2>
+<p>
+    An excellent trade. I have now traded in my tools and steel-toed boots for a keyboard and bunny slippers. The work ethic remains the same.
+</p>
+<%= render 'layouts/lgimage', locals: {folder: "static", filename: "refrigeration.jpg"} %>
+<h2>I love to code</h2>
+<p>
+    I greatly enjoy solving problems and getting work done. I cleared IED's in Afghanistan so that our Infantry could live, move and fight on
+    the battlefield. I repaired heating and cooling equipment so people and product don't freeze or melt, and I bring the same attitude to
+    design and programming. Your problems are my problems and I'm looking forward to working with you to overcome them.
+</p>

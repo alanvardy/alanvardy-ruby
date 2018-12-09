@@ -9,8 +9,7 @@
 
 <%= render 'layouts/nav_buttons' %>
 
-<%= image_tag 'albert.png', class: 'mx-auto d-block d-sm-none my-3 w-100' %>
-<%= image_tag 'albert.png', class: 'mx-auto d-sm-block d-none my-3 w-50' %>
+<%= render 'layouts/lgimage', locals: {folder: "setup", filename: "albert.png"} %>
 <%= markdown_file('albert.md') %>
 
 <%= render 'layouts/nav_buttons' %>
