@@ -1,9 +1,14 @@
 <% provide(:title, "Home") %>
 
-<h1>Hello!</h1>
+<h1>Welcome!</h1>
 <p>
     I am Alan Vardy, an aspiring Rails Developer out of Edmonton, Alberta, Canada. I love writing code,
     getting things done, and the endless iteration of improving another thing just a little more.
+</p>
+<p>
+    <%= link_to 'Take a look at my work', static_portfolio_path %>,
+    <%= link_to 'find out more about me', static_aboutme_path %>, or
+    <%= link_to 'learn something new', posts_path %>!
 </p>
 <p>
 <%= render 'layouts/mdimage', locals: {folder: "static", filename: "bwface.jpg"} %>
