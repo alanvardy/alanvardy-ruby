@@ -1,4 +1,4 @@
-    <div class="border-bottom border-grey">
+    <div class="border-bottom border-grey py-4">
       <h2><%= post.title %></h2>
       <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
           <% if session[:current_user] %>
