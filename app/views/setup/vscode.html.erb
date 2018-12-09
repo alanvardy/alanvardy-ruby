@@ -9,8 +9,7 @@
 
 <%= render 'layouts/nav_buttons' %>
 
-<%= image_tag 'vscode.png', class: 'rounded w-100 d-block d-sm-none mx-auto mb-5' %>
-<%= image_tag 'vscode.png', class: 'rounded w-75 d-none d-sm-block mx-auto mb-5' %>
+<%= render 'layouts/lgimage', locals: {folder: "setup", filename: "vscode.png"} %>
 <%=  markdown_file('vscode.md') %>
 
 <%= render 'layouts/nav_buttons' %>

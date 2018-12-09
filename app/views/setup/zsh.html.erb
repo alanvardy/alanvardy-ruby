@@ -9,8 +9,7 @@
 
 <%= render 'layouts/nav_buttons' %>
 
-<%= image_tag 'zsh.png', class: 'mx-auto d-block d-sm-none my-3 w-50' %>
-<%= image_tag 'zsh.png', class: 'mx-auto d-sm-block d-none my-3 w-25' %>
+<%= render 'layouts/lgimage', locals: {folder: "setup", filename: "zsh.png"} %>
 <%=  markdown_file('zsh.md') %>
 
 <%= render 'layouts/nav_buttons' %>

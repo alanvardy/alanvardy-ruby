@@ -9,7 +9,7 @@
 
 <%= render 'layouts/nav_buttons' %>
 
-<%= image_tag 'gnomelogo.svg', class: 'd-block mx-auto w-50'%>
+<%= render 'layouts/lgimage', locals: {folder: "setup", filename: "gnome.svg"} %>
 <%=  markdown_file('gnome.md') %>
 
 <%= render 'layouts/nav_buttons' %>
