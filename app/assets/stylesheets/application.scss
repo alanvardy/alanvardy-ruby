@@ -92,8 +92,21 @@ body {
 }
 
 // application.scss
+th {
+  background-color: $light-grey;
+  padding-right: 10px;
+}
+
+td {
+  padding-right: 10px;
+}
+
+table {
+  margin-bottom: 20px;
+}
 
 .highlight {
+
 
   border-radius: 5px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
