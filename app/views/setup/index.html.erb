@@ -2,18 +2,26 @@
 
 <h1>Setting up my Developer Environment</h1>
 <%= render 'layouts/lgimage', locals: {folder: "setup", filename: "battlestation.jpg"} %>
-<p>
-One of my vices is spending plenty of time installing and reinstalling operating systems, tools, and plugins.
-I'm using this section of the website as a living record of the current state of my developer environment in the hopes that it may be useful to someone else as well!
-The following steps will recreate what I use to code with Ruby, Rails etc.
-</p>
-<ol>
-    <li><%= link_to 'Ubuntu Linux', setup_ubuntu_path %></li>
-    <li><%= link_to 'Gnome Settings', setup_gnome_path %></li>
-    <li><%= link_to 'rbenv and Ruby', setup_ruby_path %></li>
-    <li><%= link_to 'Zsh', setup_zsh_path %></li>
-    <li><%= link_to 'Albert', setup_albert_path %></li>
-    <li><%= link_to 'Visual Studio Code', setup_vscode_path %></li>
-    <li><%= link_to 'Miscellaneous', setup_misc_path %></li>
-    <li><%= link_to 'Issues', setup_issues_path %></li>
-</ol>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <p>
+            One of my vices is spending plenty of time installing and reinstalling operating systems, tools, and plugins.
+        </p>
+        <p>
+            I'm using this section of the website as a living record of the current state of my developer environment in the hopes
+            that it may be useful to someone else as well!
+        </p>
+    </div>
+    <div class="col-12 col-md-6">
+        <ol>
+            <li><%= link_to 'Ubuntu Linux', setup_ubuntu_path %></li>
+            <li><%= link_to 'Gnome Settings', setup_gnome_path %></li>
+            <li><%= link_to 'rbenv and Ruby', setup_ruby_path %></li>
+            <li><%= link_to 'Zsh', setup_zsh_path %></li>
+            <li><%= link_to 'Albert', setup_albert_path %></li>
+            <li><%= link_to 'Visual Studio Code', setup_vscode_path %></li>
+            <li><%= link_to 'Miscellaneous', setup_misc_path %></li>
+            <li><%= link_to 'Issues', setup_issues_path %></li>
+        </ol>
+    </div>
+</div>
