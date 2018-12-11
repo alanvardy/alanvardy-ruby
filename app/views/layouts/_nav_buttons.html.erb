@@ -1,16 +1,16 @@
  <div class="row my-3">
   <div class="order-2 order-sm-1 col-6 col-sm-4 d-flex justify-content-start my-3">
-    <%= link_to yield(:back_path), class: 'btn btn-sm btn-outline-dark' do %>
+    <%= link_to yield(:back_path), class: 'btn btn-sm btn-outline-primary' do %>
       <i class="fas fa-arrow-left"></i> <%= yield(:back) %>
     <% end %>
   </div>
   <div class="order-1 order-sm-2 col-12 col-sm-4 d-sm-flex d-none justify-content-center my-3">
-    <%= link_to yield(:up_path), class: 'btn btn-sm btn-outline-dark' do %>
+    <%= link_to yield(:up_path), class: 'btn btn-sm btn-outline-primary' do %>
       <i class="fas fa-arrow-up"></i> <%= yield(:up) %>
     <% end %>
   </div>
   <div class="order-3 col -6 col-sm-4 d-flex justify-content-end my-3">
-    <%= link_to yield(:forward_path), class: 'btn btn-sm btn-outline-dark' do %>
+    <%= link_to yield(:forward_path), class: 'btn btn-sm btn-outline-primary' do %>
       <i class="fas fa-arrow-right"></i> <%= yield(:forward) %>
     <% end %>
   </div>

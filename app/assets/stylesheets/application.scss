@@ -16,8 +16,10 @@
 $black: #001420;
 $dark: #17232C;
 $grey: #828691;
-$white: #FFFEFA;
-$orange: #8b210b;
+$dark-grey: #434446;
+$light-grey: rgb(238, 238, 238);
+$orange: #ce4d33;
+$blue: #707ceb;
 $danger: #8d2f29;
 $primary: #3B5A70;
 $secondary: #8C1C13;
@@ -86,7 +88,7 @@ body {
 }
 
 .container {
-  background-color: $white;
+  background-color: $light-grey;
 }
 
 // application.scss
@@ -107,8 +109,8 @@ body {
 
   code,
   pre {
-    color: #fdce93;
-    background-color: #3f3f3f;
+    color: #fdeedb;
+    background-color: $dark-grey;
   }
 
   .hll {
@@ -121,7 +123,7 @@ body {
   }
 
   .k {
-    color: #f0dfaf;
+    color: $orange;
   }
 
   .p {
@@ -278,6 +280,6 @@ body {
   .preview-zenburn .highlight .nf,
   .preview-zenburn .highlight .bp,
   .preview-zenburn .highlight .vc {
-    color: #efef8f;
+    color: $blue;
   }
 }
