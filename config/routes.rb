@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get 'static/index'
   get 'static/portfolio'
   get 'static/aboutme'
-  get 'static/contact'
+  get 'contact', to: 'messages#new'
+  get 'messages/new'
+  post 'messages/create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
