@@ -1,4 +1,4 @@
-    <div class="border-bottom border-grey py-4">
+    <div class="my-4 rounded bg-light p-3 shadow-sm">
       <h2><%= post.title %></h2>
       <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
           <% if session[:current_user] %>
@@ -12,5 +12,5 @@
         <p><%= markdown_text(post.content) %></p>
       <% end %>
 
-      <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com" class="nostyle-2">Alan Vardy</a></small></p>
+      <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com">Alan Vardy</a></small></p>
     </div>

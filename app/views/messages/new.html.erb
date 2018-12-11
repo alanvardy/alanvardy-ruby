@@ -2,14 +2,14 @@
 
 <div class="content">
     <section>
-    <h1>Contact Me</h1>
     <div class="row d-flex justify-content-center">
     <div class="col-12 col-lg-6">
+        <h1>Contact Me</h1>
         <p>You can use the form provided or email me at <a href="mailto:alan@alanvardy.com">alan@alanvardy.com</a></p>
         <p>I'm looking forward to hearing from you!</p>
 
     </div>
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-6 bg-light rounded shadow-sm p-3">
 
         <%= form_for @message, url: messages_create_path do |f| %>
             <div class="form-group">

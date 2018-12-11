@@ -13,12 +13,16 @@
 
  */
 
-$black: #0e0b15;
-$dark: #001420;
+$black: #001420;
+$dark: #17232C;
 $grey: #828691;
 $white: #FFFEFA;
 $orange: #8b210b;
 $danger: #8d2f29;
+$primary: #3B5A70;
+$secondary: #8C1C13;
+$grey-text: rgba(255, 254, 250, 0.5);
+$grey-text-over:rgba(255, 254, 250, 0.7);
 
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 $title-font: 'Bitter',
@@ -48,20 +52,20 @@ h3 {
 
 .nostyle {
   text-decoration: none;
-  color: $grey;
+  color: $grey-text;
 
   &:hover {
-    color: $white;
+    color: $grey-text-over;
     text-decoration: none;
   }
 }
 
 .nostyle-2 {
   text-decoration: none;
-  color: $grey;
+  color: $grey-text;
 
   &:hover {
-    color: $grey;
+    color: $grey-text-over;
     text-decoration: underline;
   }
 }

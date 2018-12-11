@@ -13,15 +13,17 @@
 
 <div class="row">
     <% portfolio.each do |item| %>
-    <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center pt-5">
+    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center pt-5">
         <div class="card shadow-sm" style="width: 18rem;">
             <a href="<%= item[:website] %>" target=”_blank” ><%= image_tag "portfolio/#{item[:image]}", class: 'card-img-top w-100' %></a>
             <div class="card-body">
                 <h5 class="card-title"><%= item[:title] %></h5>
-                <p class="card-text"><%= item[:description] %></p>
+                <p class="card-text text-muted"><%= item[:description] %></p>
+            </div>
+              <div class="card-footer d-flex justify-content-around">
                 <a href="<%= item[:website] %>" class="btn btn-primary" target=”_blank” >Website</a>
                 <% if item[:github] != "#" %>
-                    <a href="<%= item[:github] %>" class="btn btn-info" target=”_blank” >Github</a>
+                    <a href="<%= item[:github] %>" class="btn btn-outline-primary" target=”_blank” >Github</a>
                 <% end %>
             </div>
         </div>
