@@ -9,6 +9,10 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     get posts_url
     assert_response :success
   end
+  test "should get list" do
+    get posts_list_url
+    assert_response :success
+  end
 
   test "shouldn't get new post without login" do
     get new_post_url
