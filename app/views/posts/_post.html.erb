@@ -7,7 +7,7 @@
       <% end %>
           <% if params[:id].nil? %>
           <p><%= markdown_text(post.content.truncate(200)) %></p>
-          <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-dark"%></p>
+          <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-primary"%></p>
       <% else %>
         <p><%= markdown_text(post.content) %></p>
       <% end %>

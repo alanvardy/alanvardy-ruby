@@ -24,9 +24,10 @@ $secondary: #8C1C13;
 $grey-text: rgba(255, 254, 250, 0.5);
 $grey-text-over:rgba(255, 254, 250, 0.7);
 
-@import url('https://fonts.googleapis.com/css?family=Bitter');
-$title-font: 'Bitter',
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Spectral:400,600');
+$title-font: 'Spectral',
 serif;
+$font-family-base: 'Open Sans';
 
 @import "bootstrap";
 @import "font-awesome-sprockets";
@@ -34,20 +35,24 @@ serif;
 
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: $title-font;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .nostyle {
