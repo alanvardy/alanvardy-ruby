@@ -1,0 +1,17 @@
+<% provide(:title, "Post List") %>
+
+<h1>Post List</h1>
+<ol reversed class>
+    <% @posts.each do |p| %>
+    <li >
+    <div class="row">
+        <div class="col-12 col-xl-6">
+            <%= link_to p.title, p %>
+        </div>
+        <div class="col-12 col-xl-6">
+            <small class="text-muted">Created: <%= p.created_at.to_formatted_s(:long) %> | Updated: <%= p.updated_at.to_formatted_s(:long) %></small>
+        </div>
+    </div>
+    </li>
+    <% end %>
+</ol>
