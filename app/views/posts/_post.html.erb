@@ -1,6 +1,15 @@
-    <div class="my-4 rounded bg-light p-3 shadow-sm">
-      <h2><%= post.title %></h2>
-      <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
+      <% if !params[:id].nil? %>
+        <h1><%= post.title %></h1>
+        <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
+      <% end %>
+    <div class="my-4 rounded bg-light p-3 shadow-sm markdown">
+      <% if params[:id].nil? %>
+        <%= link_to(post, html_options = {}) do %>
+          <h2><%= post.title %></h2>
+        <% end %>
+        <small class="text-muted">Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
+      <% end %>
+
           <% if session[:current_user] %>
         <%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-outline-warning" %>
         <%= link_to 'Destroy', post, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %>
