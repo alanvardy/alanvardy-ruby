@@ -3,7 +3,7 @@ require 'mailgun-ruby'
 class Message
   include ActiveModel::Model
   attr_accessor :name, :email, :phone_number, :body
-  validates :name, :email, :phone_number, :body, presence: true
+  validates :name, :email, :body, presence: true
 
   def send
     mg_client = Mailgun::Client.new ENV['mailgun_secret_api_key']

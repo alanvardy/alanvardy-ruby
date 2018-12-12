@@ -10,33 +10,31 @@
         <p>I'm looking forward to hearing from you!</p>
 
     </div>
-    <div class="col-12 col-lg-6 bg-light rounded shadow-sm p-3">
-
+    <div class="col-12 col-lg-6 align-middle">
+    <div class="bg-light rounded shadow-sm p-3 my-lg-5">
         <%= form_for @message, url: messages_create_path do |f| %>
             <div class="form-group">
-            <%= f.label :name %>
-            <%= f.text_field :name, class: 'form-control'%>
+            <%= f.text_field :name, class: 'form-control', placeholder: 'Name'%>
             </div>
 
             <div class="form-group">
-            <%= f.label :email %>
-            <%= f.email_field :email, class: 'form-control'%>
+            <%= f.email_field :email, class: 'form-control', placeholder: 'Email address'%>
             </div>
 
             <div class="form-group">
-            <%= f.label :phone_number %>
-            <%= f.telephone_field :phone_number, class: 'form-control'%>
+            <%= f.telephone_field :phone_number, class: 'form-control', placeholder: 'Phone number (optional)'%>
             </div>
 
             <div class="form-group">
-            <%= f.label :body %>
-            <%= f.text_area :body, class: 'form-control', rows: '5'%>
+            <%= f.text_area :body, class: 'form-control', rows: '5', placeholder: 'Message'%>
             </div>
 
             <div class="form-group">
             <%= f.submit 'Send Form', class: 'btn btn-outline-primary'%>
             </div>
+                <small class="text-muted ml-3">Your email address will not be shared with 3rd parties</small>
         <% end %>
+    </div>
     </div>
     </div>
     </section>

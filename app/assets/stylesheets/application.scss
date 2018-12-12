@@ -76,6 +76,23 @@ h3 {
   }
 }
 
+.rounded-circle {
+  width: 30px;
+  height:30px;
+  vertical-align: middle;
+  line-height: 30px;
+  &.fa-wrench {
+    padding-left: 7px;
+  }
+  &.fa-question {
+    padding-left: 9px;
+  }
+  &.fa-lightbulb {
+    padding-left: 9px;
+  }
+
+}
+
 .fab {
   font-size: 1rem;
 }
@@ -86,11 +103,6 @@ ul.biglist {
   li {
     padding-bottom: 7px;
   }
-}
-
-markdown ul {
-  list-style-type: circle;
-  list-style-position: outside;
 }
 
 body {
