@@ -16,13 +16,12 @@
 $black: #001420;
 $dark: #17232C;
 $grey: #828691;
-$dark-grey: #434446;
 $light-grey: rgb(238, 238, 238);
 $orange: #ce4d33;
 $blue: #707ceb;
 $danger: #8d2f29;
-$primary: #3B5A70;
-$secondary: #8C1C13;
+$primary: rgb(51, 98, 131);
+$secondary: #434446;
 $grey-text: rgba(255, 254, 250, 0.5);
 $grey-text-over:rgba(255, 254, 250, 0.7);
 
@@ -81,6 +80,13 @@ h3 {
   font-size: 1rem;
 }
 
+ul {
+  list-style: none;
+  li {
+    padding-bottom: 7px;
+  }
+}
+
 body {
   background-color: $grey;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%237c7d81' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
@@ -124,7 +130,7 @@ table {
   code,
   pre {
     color: #fdeedb;
-    background-color: $dark-grey;
+    background-color: $secondary;
   }
 
   .hll {
