@@ -4,14 +4,24 @@
     This is the part where I get to talk about myself! Other than pure self-indulgence,
     I am creating this page so that you can understand a little bit more about who I am and where I come from.
 </p>
-<h2>I'm a Canadian and a New Zealander</h2>
-<p>
-    I was born and raised in the land of sheep, kiwis, and hobbits. I have lived in a few different countries and value those experiences.
-</p>
-<%= render 'layouts/mdimage', locals: {folder: "static", filename: "newzealand.jpg"} %>
-<h2>I'm a father and a husband</h2>
-<p>And this is my family!</p>
-<%= render 'layouts/mdimage', locals: {folder: "static", filename: "family.jpg"} %>
+<div class="row">
+    <div class="col-12 col-lg-6 order-lg-1">
+        <h2>I'm a Canadian and a New Zealander</h2>
+        <p>
+            I was born and raised in the land of sheep, kiwis, and hobbits. I have lived in a few different countries and value those experiences.
+        </p>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-3">
+        <%= render 'layouts/lgimage', locals: {folder: "static", filename: "newzealand.jpg"} %>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-2">
+        <h2>I'm a father and a husband</h2>
+        <p></p>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-4">
+        <%= render 'layouts/lgimage', locals: {folder: "static", filename: "family.jpg"} %>
+    </div>
+</div>
 <h2>I spent 5 years in the Canadian Forces</h2>
 <p>
     Lets just say that the Combat Engineers have fantastic recruiting videos, and that Afghanistan had a lot of sand but no beaches.
@@ -27,9 +37,21 @@
     Because programming is about people and Edmonton has a fantastic community. <a href="http://www.yegrb.com/">Learn more at YEGRB.com</a>
 </p>
 <%= render 'layouts/lgimage', locals: {folder: "static", filename: "startupedmonton.jpg"} %>
-<h2>...and I love to code!</h2>
-<p>
-    I greatly enjoy solving problems and getting work done. I cleared IED's in Afghanistan so that our Infantry could live, move and fight on
-    the battlefield. I repaired heating and cooling equipment so people and product don't freeze or melt, and I bring the same attitude to
-    design and programming. Your problems are my problems and I'm looking forward to working with you to overcome them.
-</p>
+<div class="row">
+    <div class="col-12 col-lg-5">
+        <h2>...and I love to code!</h2>
+        <p>
+            I greatly enjoy solving problems and getting work done. I cleared IED's in Afghanistan so that our Infantry could live, move and fight on
+            the battlefield. I repaired heating and cooling equipment so people and product don't freeze or melt.
+        </p>
+        <p>
+            I bring the same attitude to design and programming. Your problems are my problems and I'm looking forward to working with you to overcome them.
+        </p>
+        <div class="d-flex justify-content-center mt-3">
+            <%= link_to 'Contact me now!', contact_path, class: 'btn btn-primary btn-lg' %>
+        </div>
+    </div>
+    <div class="col-12 col-lg-7">
+        <%= render 'layouts/lgimage', locals: {folder: "static", filename: "code.jpg"} %>
+    </div>
+</div>

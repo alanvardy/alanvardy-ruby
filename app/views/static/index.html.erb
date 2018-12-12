@@ -3,16 +3,33 @@
     <div class="col-12 col-lg-6">
         <h1>Welcome!</h1>
         <p>
-            I am Alan Vardy, an aspiring Rails Developer out of Edmonton, Alberta, Canada. I love writing code,
-            getting things done, and the endless iteration of improving another thing just a little more.
+            I am Alan Vardy, an aspiring Rails Developer out of Edmonton, Alberta, Canada.
+            I am passionate about writing code, tackling challenges, and making things better
+            one step at a time.
+        </p>
+        <p>
+            My technology stack is Ruby, Ruby on Rails, Javascript, CSS and HTML.
         </p>
         <p>
             You are invited to:
             <ul>
-                <li><%= link_to 'Take a look at my work', static_portfolio_path %>,</li>
-                <li><%= link_to 'Find out more about me', static_aboutme_path %>, or</li>
-                <li><%= link_to 'Learn something new', posts_path %>!</li>
+                <li>
+                    <%= link_to(static_portfolio_path, html_options = {}) do %>
+                        <i class="fas fa-wrench p-2 rounded-circle bg-white"></i> Take a look at my work
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to(static_aboutme_path, html_options = {}) do %>
+                        <i class="fas fa-question p-2 rounded-circle bg-white"></i> Find out more about me
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to(posts_path, html_options = {}) do %>
+                        <i class="fas fa-lightbulb p-2 rounded-circle bg-white"></i> Learn something new
+                    <% end %>
+                </li>
             </ul>
+
         </p>
     </div>
     <div class="col-12 col-lg-6">
