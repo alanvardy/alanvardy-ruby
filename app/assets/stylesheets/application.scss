@@ -80,11 +80,17 @@ h3 {
   font-size: 1rem;
 }
 
-ul {
+ul.biglist {
   list-style: none;
+
   li {
     padding-bottom: 7px;
   }
+}
+
+markdown ul {
+  list-style-type: circle;
+  list-style-position: outside;
 }
 
 body {
