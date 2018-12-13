@@ -18,7 +18,7 @@ $dark: #17232C;
 $grey: #828691;
 $light-grey: rgb(238, 238, 238);
 $orange: #ce4d33;
-$blue: #707ceb;
+$blue: #727ff1;
 $danger: #8d2f29;
 $primary: rgb(51, 98, 131);
 $secondary: #434446;
@@ -79,15 +79,18 @@ h3 {
 
 .rounded-circle {
   width: 30px;
-  height:30px;
+  height: 30px;
   vertical-align: middle;
   line-height: 30px;
+
   &.fa-wrench {
     padding-left: 7px;
   }
+
   &.fa-question {
     padding-left: 9px;
   }
+
   &.fa-lightbulb {
     padding-left: 9px;
   }
@@ -166,7 +169,7 @@ table {
   }
 
   .p {
-    color: #41706f;
+    color: #2da5a3;
   }
 
   .cs {
@@ -214,7 +217,7 @@ table {
   }
 
   .kn {
-    color: #dfaf8f;
+    color: #db7734;
     font-weight: 700;
   }
 
@@ -227,7 +230,7 @@ table {
   }
 
   .ni {
-    color: #c28182;
+    color: #b49697;
   }
 
   .ne {
