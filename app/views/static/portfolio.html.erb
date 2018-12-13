@@ -1,16 +1,18 @@
 <% provide(:title, "Portfolio") %>
 <h1>Portfolio</h1>
 <% portfolio = [
+    {title: "Alan Vardy", description: "This site!", website: "https://www.alanvardy.com/",
+    github: "https://github.com/alanvardy/alanvardy",image: "alanvardy.png", more: "#" },
     {title: "YEGRB", description: "Edmonton's Ruby Meetup", website: "https://www.yegrb.com/",
     github: "https://github.com/yegrb/yegrb.github.io",image: "yegrb.png", more: "#" },
     {title: "Cornelia Kelinske", description: "Professional Translator and Interpreter", website: "https://www.corneliakelinske.com/",
     github: "#",image: "corneliakelinske.png", more: "#" },
-    {title: "Browser Calculator", description: "An exercise in javascript", website: "https://alanvardy-calculator.herokuapp.com/",
+    {title: "dbbackup", description: "A shell script that backs up all your Heroku and Dokku Postgres databases to Google Drive", website: "#",
+    github: "https://github.com/alanvardy/dbbackup",image: "dbbackup.png", more: "#" },
+    {title: "Browser Calculator", description: "An exercise in javascript, try using your keyboard!", website: "https://alanvardy-calculator.herokuapp.com/",
     github: "https://github.com/alanvardy/calculator",image: "calculator.png", more: "#" },
     {title: "Exercism", description: "Improving coding skills through practice and mentorship", website: "https://exercism.io/profiles/alanvardy",
     github: "https://github.com/alanvardy/exercism",image: "exercism.png", more: "#" },
-    {title: "Alan Vardy", description: "This site!", website: "https://www.alanvardy.com/",
-    github: "https://github.com/alanvardy/alanvardy",image: "alanvardy.png", more: "#" },
 ] %>
 
 <div class="row">
@@ -26,7 +28,9 @@
                 <% end %>
             </div>
               <div class="card-footer d-flex justify-content-around">
-                <a href="<%= item[:website] %>" class="btn btn-primary" target=”_blank” >Website</a>
+                <% if item[:website] != "#" %>
+                    <a href="<%= item[:website] %>" class="btn btn-primary" target=”_blank” >Website</a>
+                <% end %>
                 <% if item[:github] != "#" %>
                     <a href="<%= item[:github] %>" class="btn btn-outline-primary" target=”_blank” >Github</a>
                 <% end %>
