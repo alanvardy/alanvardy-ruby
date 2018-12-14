@@ -22,5 +22,6 @@ Rails.application.routes.draw do
   get 'contact', to: 'messages#new'
   get 'messages/new'
   post 'messages/create'
+  get '/check.txt', to: proc {[200, {}, ['it_works']]}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
