@@ -39,6 +39,7 @@ $font-family-base: 'Open Sans';
   border-bottom: 1px solid transparent;
   box-sizing: border-box;
   transition: .5s ease-in;
+  -webkit-transition: .5s ease-in;
 
   &.active {
     border-bottom: 1px solid rgba(255, 252, 252, 0.5);
