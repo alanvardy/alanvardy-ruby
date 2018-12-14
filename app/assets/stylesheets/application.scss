@@ -35,10 +35,25 @@ $font-family-base: 'Open Sans';
 @import "font-awesome";
 
 
+.nav-link {
+  border-bottom: 1px solid transparent;
+  box-sizing: border-box;
+  transition: .5s ease-in;
+
+  &.active {
+    border-bottom: 1px solid rgba(255, 252, 252, 0.5);
+  }
+}
+
 h1,
 h2,
 h3 {
   font-family: $title-font;
+}
+
+.navbar-brand {
+  font-family: $title-font;
+  font-size: 1.5rem;
 }
 
 h1 {
