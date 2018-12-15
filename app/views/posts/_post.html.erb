@@ -14,15 +14,15 @@
         <p><small>Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
       <% end %>
 
-          <% if session[:current_user] %>
-        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-outline-warning" %>
-        <%= link_to 'Destroy', post, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %>
-      <% end %>
           <% if params[:id].nil? %>
           <p><%= markdown_text(post.content.truncate(200)) %></p>
           <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-primary"%></p>
       <% else %>
         <p><%= markdown_text(post.content) %></p>
+      <% end %>
+      <% if session[:current_user] %>
+        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-outline-warning" %>
+        <%= link_to 'Destroy', post, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %>
       <% end %>
 
       <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com">Alan Vardy</a></small></p>
