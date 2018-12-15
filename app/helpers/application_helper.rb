@@ -11,4 +11,8 @@ module ApplicationHelper
     end
     include Rouge::Plugins::Redcarpet
   end
+
+  def date(sequence)
+    sequence.strftime('%F')
+  end
 end

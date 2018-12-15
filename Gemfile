@@ -41,6 +41,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'mailgun-ruby'
+gem 'simple_form'
 
 
 group :production do

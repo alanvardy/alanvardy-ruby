@@ -1,13 +1,17 @@
+
       <% if !params[:id].nil? %>
         <h1><%= post.title %></h1>
         <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
+        <small>Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
       <% end %>
+
     <div class="my-4 rounded bg-light p-3 shadow-sm markdown">
       <% if params[:id].nil? %>
         <%= link_to(post, html_options = {}) do %>
           <h2><%= post.title %></h2>
         <% end %>
-        <small class="text-muted">Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
+        <small class="text-muted">Created: <%= date(post.created_at) %> | Updated: <%= date(post.updated_at) %></small><br>
+        <p><small>Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
       <% end %>
 
           <% if session[:current_user] %>
