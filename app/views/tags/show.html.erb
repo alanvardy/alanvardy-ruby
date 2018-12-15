@@ -1,0 +1,28 @@
+<% provide(:title, @tag.name) %>
+
+<p>
+  <h1><%= @tag.name %></h1>
+  <small><%= pluralize(@tag.posts.count, 'post') %></small>
+  <ol reversed class="mt-3">
+    <% @tag.posts.each do |p| %>
+    <li>
+    <div class="row">
+        <div class="col-12 col-xl-6">
+            <%= link_to p.title, p %>
+        </div>
+        <div class="col-12 col-xl-6">
+            <small class="text-muted">Created: <%= date(p.created_at) %> | Updated: <%= date(p.updated_at) %></small>
+        </div>
+    </div>
+    </li>
+    <% end %>
+    </p>
+  </ol>
+
+
+<p class="mt-1">
+  <%= link_to 'Back', tags_path, class: "btn btn-sm btn-outline-primary" %>
+  <% if session[:current_user] %>
+    <%= link_to 'Edit', edit_tag_path(@tag), class: "btn btn-sm btn-outline-primary" %>
+  <% end %>
+</p>

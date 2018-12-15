@@ -1,28 +1,14 @@
-<%= form_with(model: post, local: true) do |form| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-<div class="form-group">
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, class: 'form-control'%>
-  </div>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content, class: 'form-control', rows: '15'%>
-  </div>
-
-  <div class="actions">
-    <%= form.submit class: "btn btn-outline-primary mt-3" %>
-  </div>
+  <%= simple_form_for @post do |f| %>
+  <div class="row">
+<div class = 'col-md-8'>
+    <%= f.input :title %>
+    <%= f.input :content, input_html: { rows: 18 } %>
 </div>
-<% end %>
+<div class="col-md-4">
+    <%= f.input :tag_ids, as: :select, collection: Tag.order(:name), label_method: :name, input_html: {multiple: true, size: 20} %>
+    <%= f.submit "Save", class: 'btn btn-lg btn-outline-primary float-right' %>
+</div>
+  </div>
+  <% end %>

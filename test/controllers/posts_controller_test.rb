@@ -32,12 +32,12 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get edit" do
+  test "should get edit without login" do
     get edit_post_url(@post)
-    assert_response :success
+    assert_redirected_to sessions_new_path
   end
 
-  test "should update post" do
+  test "shouldn't update post without login" do
     patch post_url(@post), params: { post: { content: @post.content, title: @post.title } }
     assert_redirected_to sessions_new_path
   end

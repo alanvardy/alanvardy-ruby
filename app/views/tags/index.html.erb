@@ -1,0 +1,27 @@
+<% provide(:title, 'Tags') %>
+
+<h1>Tags</h1>
+
+<table>
+  <tbody>
+    <% @tags.each do |tag| %>
+      <tr>
+        <td><%= link_to tag.name, tag %> <small> <%= pluralize(tag.posts.count, 'post') %></small></td>
+<% if session[:current_user] %>
+        <td><%= link_to 'Edit', edit_tag_path(tag), class: "btn btn-sm btn-outline-warning" %></td>
+        <td><%= link_to 'Destroy', tag, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+
+<p class="mt-1">
+  <% if session[:current_user] %>
+    <%= link_to 'New Tag', new_tag_path, class: "btn btn-sm btn-outline-info"%>
+  <% end %>
+</p>
