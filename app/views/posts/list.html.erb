@@ -1,7 +1,7 @@
-<% provide(:title, "Post List") %>
-
-<h1>Post List</h1>
-<ol reversed class>
+<% provide(:title, "All Posts") %>
+<%= render 'layouts/post_tabs' %>
+<h1>All Posts</h1>
+<ol>
     <% @posts.each do |p| %>
     <li >
     <div class="row">

@@ -1,0 +1,18 @@
+  <div class="container mt-2">
+<ul class="nav nav-tabs border-0">
+  <li class="nav-item">
+  <%= link_to 'Latest', posts_path, class: active_tab("Blog", yield(:title)) %>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Tags', tags_path, class: active_tab("Tags", yield(:title)) %>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'All', posts_list_path, class: active_tab("All Posts", yield(:title)) %>
+  </li>
+
+</ul>
+</div>
+  <div class="container rounded-top  bg-grey0 px-5 mt-0 py-5">
+  <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+<% end %>
