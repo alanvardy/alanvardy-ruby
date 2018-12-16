@@ -1,13 +1,13 @@
   <div class="container mt-2">
 <ul class="nav nav-tabs border-0">
   <li class="nav-item">
-  <%= link_to 'Latest', posts_path, class: active_tab("Blog", yield(:title)) %>
+  <%= link_to 'Latest Posts', posts_path, class: active_tab("Blog", yield(:title)) %>
   </li>
   <li class="nav-item">
     <%= link_to 'Tags', tags_path, class: active_tab("Tags", yield(:title)) %>
   </li>
   <li class="nav-item">
-    <%= link_to 'All', posts_list_path, class: active_tab("All Posts", yield(:title)) %>
+    <%= link_to 'All Posts', posts_list_path, class: active_tab("All Posts", yield(:title)) %>
   </li>
 
 </ul>

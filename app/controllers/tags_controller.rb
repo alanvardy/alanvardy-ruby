@@ -2,6 +2,7 @@
 
 class TagsController < ApplicationController
   before_action :set_tag, only: %i[show edit update destroy]
+  before_action :authentication_required!, except: %i[index show]
 
   # GET /tags
   # GET /tags.json
@@ -15,19 +16,16 @@ class TagsController < ApplicationController
 
   # GET /tags/new
   def new
-    authentication_required!
     @tag = Tag.new
   end
 
   # GET /tags/1/edit
   def edit
-    authentication_required!
   end
 
   # POST /tags
   # POST /tags.json
   def create
-    authentication_required!
     @tag = Tag.new(tag_params)
 
     respond_to do |format|
@@ -44,7 +42,6 @@ class TagsController < ApplicationController
   # PATCH/PUT /tags/1
   # PATCH/PUT /tags/1.json
   def update
-    authentication_required!
     respond_to do |format|
       if @tag.update(tag_params)
         format.html { redirect_to @tag, notice: 'Tag was successfully updated.' }
@@ -59,7 +56,6 @@ class TagsController < ApplicationController
   # DELETE /tags/1
   # DELETE /tags/1.json
   def destroy
-    authentication_required!
     @tag.destroy
     respond_to do |format|
       format.html { redirect_to tags_url, notice: 'Tag was successfully destroyed.' }

@@ -53,6 +53,16 @@ $font-family-base: 'Open Sans';
   margin-right: 2px;
 }
 
+.pagination {
+  li {
+  margin-right: 10px;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+}
+
 h1,
 h2,
 h3 {
