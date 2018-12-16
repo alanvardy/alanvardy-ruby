@@ -24,5 +24,6 @@ Rails.application.routes.draw do
   resources :sessions, only: %i[create new destroy]
   resources :posts
   get '/check.txt', to: proc { [200, {}, ['it_works']] }
+  get 'google5ef096ebdd0ff65a.html' to: 'static#google5ef096ebdd0ff65a'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
