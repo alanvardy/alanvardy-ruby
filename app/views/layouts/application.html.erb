@@ -13,10 +13,6 @@
 
   <body>
   <%= render 'layouts/navbar' %>
-  <div class="container mt-3 rounded-top py-5 px-5">
-  <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-<% end %>
     <%= yield %>
   <% if session[:current_user] %>
   <p class="mt-1">

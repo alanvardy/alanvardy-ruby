@@ -15,4 +15,12 @@ module ApplicationHelper
   def date(sequence)
     sequence.strftime('%F')
   end
+
+  def active_nav(pages, title)
+    if pages.include?(title)
+      'nav-item nav-link active'
+    else
+      'nav-item nav-link'
+    end
+  end
 end
