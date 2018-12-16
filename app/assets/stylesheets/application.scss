@@ -12,21 +12,17 @@
  *
 
  */
-$theme-colors: ("grey0": rgb(238, 238, 238),
-"grey1": rgb(204, 202, 202),
-"grey3": #828691,
+$theme-colors: ("grey0": hsl(0, 0%, 93%),
+"grey1": hsl(0, 2%, 80%),
+"grey2": hsl(0, 3%, 70%),
+"grey3": hsl(0, 1%, 49%),
+"primary": hsl(205, 44%, 36%),
+"secondary": hsl(220, 2%, 27%),
+"dark": hsl(206, 31%, 13%),
+"danger": hsl(4, 55%, 36%),
+"warning": hsl(10, 61%, 50%),
+"info": hsl(234, 82%, 70%),
 );
-$black: #001420;
-$dark: #17232C;
-$grey: #828691;
-$light-grey: rgb(238, 238, 238);
-$orange: #ce4d33;
-$blue: #727ff1;
-$danger: #8d2f29;
-$primary: rgb(51, 98, 131);
-$secondary: #434446;
-$grey-text: rgba(255, 254, 250, 0.5);
-$grey-text-over:rgba(255, 254, 250, 0.7);
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Spectral:400,600');
 $title-font: 'Spectral',
@@ -45,7 +41,7 @@ $font-family-base: 'Open Sans';
   -webkit-transition: .5s ease-in;
 
   &.active {
-    border-bottom: 1px solid rgba(255, 252, 252, 0.5);
+    border-bottom: 1px solid map_get($theme-colors, 'grey2');
   }
 }
 
@@ -55,7 +51,7 @@ $font-family-base: 'Open Sans';
 
 .pagination {
   li {
-  margin-right: 10px;
+    margin-right: 10px;
   }
 
   .active {
@@ -91,21 +87,25 @@ h3 {
 }
 
 .nostyle {
+  transition: .5s ease-in;
+  -webkit-transition: .5s ease-in;
   text-decoration: none;
-  color: $grey-text;
+  color: map_get($theme-colors, 'grey3');
 
   &:hover {
-    color: $grey-text-over;
+    color: map_get($theme-colors, 'grey1');
     text-decoration: none;
   }
 }
 
 .nostyle-2 {
+  transition: .5s ease-in;
+  -webkit-transition: .5s ease-in;
   text-decoration: none;
-  color: $grey-text;
+  color: map_get($theme-colors, 'grey3');
 
   &:hover {
-    color: $grey-text-over;
+    color: map_get($theme-colors, 'grey1');
     text-decoration: underline;
   }
 }
@@ -143,14 +143,12 @@ ul.biglist {
 }
 
 body {
-  background-color: $grey;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%237c7d81' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
-  color: $black;
 }
 
 // application.scss
 th {
-  background-color: $light-grey;
+  background-color: map_get($theme-colors, 'grey2');
   padding-right: 10px;
 }
 
@@ -180,8 +178,9 @@ table {
 
   code,
   pre {
-    color: #fdeedb;
-    background-color: $secondary;
+    color: map_get($theme-colors, 'grey0');
+    ;
+    background-color: map_get($theme-colors, 'secondary');
   }
 
   .hll {
@@ -234,7 +233,7 @@ table {
   }
 
   .gt {
-    color: #0040D0;
+    color: map_get($theme-colors, 'primary');
   }
 
   .kc {
@@ -351,6 +350,6 @@ table {
   .preview-zenburn .highlight .nf,
   .preview-zenburn .highlight .bp,
   .preview-zenburn .highlight .vc {
-    color: $blue;
+    color: map_get($theme-colors, 'warning');
   }
 }
