@@ -4,7 +4,6 @@
         <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
         <small>Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
       <% end %>
-
     <div class="my-4 rounded bg-light p-3 shadow-sm markdown">
         <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: session[:current_user]}%>
       <% if params[:id].nil? %>

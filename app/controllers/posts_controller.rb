@@ -1,12 +1,15 @@
 # frozen_string_literal: true
 
+require 'will_paginate/array'
+
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
+  before_action :authentication_required!, except: %i[index list show]
 
   # GET /posts
   # GET /posts.json
   def index
-    params[:tag] ? @posts = Post.tagged_with(params[:tag]).order(created_at: :desc) : @posts = Post.all.order(created_at: :desc)
+    @posts = Post.all.order(created_at: :desc).paginate(page: params[:page], per_page: 3)
   end
 
   def list
@@ -15,24 +18,20 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   # GET /posts/1.json
-  def show
-  end
+  def show; end
 
   # GET /posts/new
   def new
-    authentication_required!
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
-    authentication_required!
   end
 
   # POST /posts
   # POST /posts.json
   def create
-    authentication_required!
     @post = Post.new(post_params)
 
     respond_to do |format|
@@ -50,7 +49,6 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    authentication_required!
     respond_to do |format|
       if @post.update(post_params)
         flash[:success] = 'Post was successfully updated.'
@@ -66,7 +64,6 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    authentication_required!
     @post.destroy
     respond_to do |format|
       flash[:info] = 'Post was successfully destroyed.'

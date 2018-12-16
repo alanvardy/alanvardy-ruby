@@ -2,5 +2,7 @@
 <%= render 'layouts/post_tabs' %>
 
 
-<h1>Blog</h1>
+<h1>Latest Posts</h1>
+<%= will_paginate %>
 <%= render @posts %>
+<%= will_paginate %>
