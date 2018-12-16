@@ -8,4 +8,8 @@ class StaticController < ApplicationController
   def resume; end
 
   def contact; end
+
+  def google5ef096ebdd0ff65a
+    render :google5ef096ebdd0ff65a, layout: false
+  end
 end
