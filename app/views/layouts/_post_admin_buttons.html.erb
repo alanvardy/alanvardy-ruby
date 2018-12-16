@@ -1,0 +1,4 @@
+<% if admin %>
+    <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-sm btn-outline-warning' %>
+    <%= link_to 'Destroy', post, method: :delete, class: 'btn btn-sm btn-outline-danger', data: { confirm: 'Are you sure?' } %>
+<% end %>
