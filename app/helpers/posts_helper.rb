@@ -9,9 +9,9 @@ module PostsHelper
 
   def active_tab(pages, title)
     if pages == title
-      'nav-link bg-grey0'
-    else
       'nav-link bg-grey1'
+    else
+      'nav-link bg-grey2'
     end
   end
 

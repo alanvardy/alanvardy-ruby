@@ -21,7 +21,7 @@
     <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center pt-5">
         <div class="card shadow-sm" style="width: 18rem;">
             <a href="<%= item[:website] %>" target=”_blank” ><%= image_tag "portfolio/#{item[:image]}", class: 'card-img-top w-100' %></a>
-            <div class="card-body bg-light">
+            <div class="card-body bg-grey0">
                 <h5 class="card-title"><%= item[:title] %></h5>
                 <p class="card-text text-muted"><%= item[:description] %></p>
                 <% if item[:more] != "#" %>
@@ -33,7 +33,7 @@
                     <a href="<%= item[:website] %>" class="btn btn-primary" target=”_blank” >Website</a>
                 <% end %>
                 <% if item[:github] != "#" %>
-                    <a href="<%= item[:github] %>" class="btn btn-outline-primary" target=”_blank” >Github</a>
+                    <a href="<%= item[:github] %>" class="btn btn-outline-secondary" target=”_blank” >Github</a>
                 <% end %>
             </div>
         </div>

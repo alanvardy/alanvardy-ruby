@@ -12,13 +12,13 @@
  *
 
  */
-$theme-colors: ("grey0": hsl(0, 0%, 93%),
-"grey1": hsl(0, 2%, 80%),
-"grey2": hsl(0, 3%, 70%),
-"grey3": hsl(0, 1%, 49%),
-"primary": hsl(205, 68%, 28%),
-"secondary": hsl(220, 2%, 27%),
-"dark": hsl(206, 31%, 13%),
+$theme-colors: ("grey0": hsl(204, 0%, 100%),
+"grey1": hsl(204, 2%, 93%),
+"grey2": hsl(204, 3%, 85%),
+"grey3": hsl(204, 6%, 60%),
+"primary": hsl(205, 68%, 20%),
+"secondary": hsl(14, 95%, 34%),
+"dark": hsl(220, 68%, 7%),
 "danger": hsl(4, 70%, 40%),
 "warning": hsl(12, 92%, 63%),
 "info": hsl(234, 82%, 70%),
@@ -43,6 +43,10 @@ $font-family-base: 'Open Sans';
   &.active {
     border-bottom: 1px solid map_get($theme-colors, 'grey2');
   }
+}
+
+.border-secondary {
+  border-width: 2px !important;
 }
 
 .nav-tabs .nav-item {
@@ -180,7 +184,7 @@ table {
   pre {
     color: map_get($theme-colors, 'grey0');
     ;
-    background-color: map_get($theme-colors, 'secondary');
+    background-color: map_get($theme-colors, 'dark');
   }
 
   .hll {

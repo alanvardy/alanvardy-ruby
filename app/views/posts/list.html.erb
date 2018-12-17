@@ -1,17 +1,19 @@
 <% provide(:title, "All Posts") %>
 <%= render 'layouts/post_tabs' %>
 <h1>All Posts</h1>
-<ol>
-    <% @posts.each do |p| %>
-    <li >
-    <div class="row">
-        <div class="col-12 col-xl-6">
-            <%= link_to p.title, p %>
+<div class="border-secondary pl-2 border-left">
+    <ol>
+        <% @posts.each do |p| %>
+        <li >
+        <div class="row">
+            <div class="col-12 col-xl-6">
+                <%= link_to p.title, p %>
+            </div>
+            <div class="col-12 col-xl-6">
+                <small class="text-muted">Created: <%= p.created_at.to_formatted_s(:long) %> | Updated: <%= p.updated_at.to_formatted_s(:long) %></small>
+            </div>
         </div>
-        <div class="col-12 col-xl-6">
-            <small class="text-muted">Created: <%= p.created_at.to_formatted_s(:long) %> | Updated: <%= p.updated_at.to_formatted_s(:long) %></small>
-        </div>
-    </div>
-    </li>
-    <% end %>
-</ol>
+        </li>
+        <% end %>
+    </ol>
+</div>

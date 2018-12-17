@@ -1,42 +1,42 @@
 <% provide(:title, "Contact Me") %>
 <%= render 'layouts/top_of_page' %>
 
-<div class="content">
-    <section>
-    <div class="row d-flex justify-content-center">
-    <div class="col-12 col-lg-6">
-        <h1>Contact Me</h1>
-        <p>You can use the form provided or email me at <a href="mailto:alan@alanvardy.com">alan@alanvardy.com</a></p>
-        <%= render 'layouts/lgimage', locals: {folder: "static", filename: "typewriter.jpg"} %>
-        <p>I'm looking forward to hearing from you!</p>
+    <div class="content">
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <h1>Contact Me</h1>
+                    <p>You can use the form provided or email me at <a href="mailto:alan@alanvardy.com">alan@alanvardy.com</a></p>
+                    <%= render 'layouts/lgimage', locals: {folder: "static", filename: "typewriter.jpg"} %>
 
-    </div>
-    <div class="col-12 col-lg-6 align-middle">
-    <div class="bg-light rounded shadow-sm p-3 my-lg-5">
-        <%= form_for @message, url: messages_create_path do |f| %>
-            <div class="form-group">
-            <%= f.text_field :name, class: 'form-control', placeholder: 'Name'%>
-            </div>
 
-            <div class="form-group">
-            <%= f.email_field :email, class: 'form-control', placeholder: 'Email address'%>
-            </div>
+                </div>
+            <div class="col-12 col-lg-6 align-middle">
+                    <div class="bg-grey0 rounded shadow-sm p-3 mb-3 my-lg-5">
+                    <%= form_for @message, url: messages_create_path do |f| %>
+                        <div class="form-group">
+                            <%= f.text_field :name, class: 'form-control', placeholder: 'Name'%>
+                        </div>
 
-            <div class="form-group">
-            <%= f.telephone_field :phone_number, class: 'form-control', placeholder: 'Phone number (optional)'%>
-            </div>
-
-            <div class="form-group">
-            <%= f.text_area :body, class: 'form-control', rows: '5', placeholder: 'Message'%>
-            </div>
-
-            <div class="form-group">
-            <%= f.submit 'Send Form', class: 'btn btn-outline-primary'%>
-            </div>
-                <small class="text-muted ml-3">Your email address will not be shared with 3rd parties</small>
-        <% end %>
-    </div>
+                        <div class="form-group">
+                            <%= f.email_field :email, class: 'form-control', placeholder: 'Email address'%>
+                        </div>
+                        <div class="form-group">
+                            <%= f.telephone_field :phone_number, class: 'form-control', placeholder: 'Phone number (optional)'%>
+                        </div>
+                        <div class="form-group">
+                            <%= f.text_area :body, class: 'form-control', rows: '5', placeholder: 'Message'%>
+                        </div>
+                        <div class="form-group">
+                            <%= f.submit 'Send Form', class: 'btn btn-outline-primary'%>
+                        </div>
+                        <small class="text-muted ml-3">
+                            Your email address will not be shared with 3rd parties
+                        </small>
+                    <% end %>
+        </div>
     </div>
     </div>
     </section>
+                        <p class="text-center border-secondary border-top pt-3">I'm looking forward to hearing from you!</p>
 </div>

@@ -1,20 +1,21 @@
 <% provide(:title, 'Tags') %>
 <%= render 'layouts/post_tabs' %>
 <h1>Tags</h1>
-
-<table>
-  <tbody>
-    <% @tags.each do |tag| %>
-      <tr>
-        <td><%= link_to tag.name, tag %> <small> <%= pluralize(tag.posts.count, 'post') %></small></td>
-<% if session[:current_user] %>
-        <td><%= link_to 'Edit', edit_tag_path(tag), class: "btn btn-sm btn-outline-warning" %></td>
-        <td><%= link_to 'Destroy', tag, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %></td>
-  <% end %>
-      </tr>
+<div class="border-secondary pl-3 border-left">
+  <table>
+    <tbody>
+      <% @tags.each do |tag| %>
+        <tr>
+          <td><%= link_to tag.name, tag %> <small> <%= pluralize(tag.posts.count, 'post') %></small></td>
+  <% if session[:current_user] %>
+          <td><%= link_to 'Edit', edit_tag_path(tag), class: "btn btn-sm btn-outline-warning" %></td>
+          <td><%= link_to 'Destroy', tag, method: :delete, class: "btn btn-sm btn-outline-danger", data: { confirm: 'Are you sure?' } %></td>
     <% end %>
-  </tbody>
-</table>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
