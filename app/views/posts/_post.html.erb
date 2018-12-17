@@ -1,12 +1,14 @@
 
-      <% if !params[:id].nil? %>
+      <% if show_page %>
         <h1><%= post.title %></h1>
         <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %></small><br>
         <small>Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
       <% end %>
-    <div class="my-4 rounded bg-light p-3 shadow-sm markdown">
-        <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: session[:current_user]}%>
-      <% if params[:id].nil? %>
+    <div class="mb-4 rounded bg-light p-3 shadow-sm markdown">
+    <% if show_page %>
+      <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: session[:current_user]}%>
+    <% end %>
+      <% if !show_page %>
         <%= link_to(post, html_options = {}) do %>
           <h2><%= post.title %></h2>
         <% end %>
@@ -14,12 +16,15 @@
         <p><small>Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
       <% end %>
 
-          <% if params[:id].nil? %>
+          <% if !show_page %>
           <p><%= markdown_text(post.content.truncate(200)) %></p>
-          <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-primary"%></p>
+          <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-primary"%>
+            <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: session[:current_user]}%>
+          </p>
       <% else %>
         <p><%= markdown_text(post.content) %></p>
       <% end %>
-      <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com">Alan Vardy</a></small></p>
-        <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: session[:current_user]}%>
+      <% if show_page %>
+        <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com">Alan Vardy</a></small></p>
+      <% end %>
     </div>
