@@ -30,13 +30,10 @@ ADMIN_USERNAME=admin
 ADMIN_PASS=password
 ```
 
-No, these are not what I use. Nice try :)
-
-Install heroku cli and run.
+Run the server
 
 ```bash
-sudo apt install heroku
-heroku local
+rails s
 ```
 
 ## License
