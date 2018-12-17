@@ -48,11 +48,9 @@
         <p>
             I bring the same attitude to design and programming. Your problems are my problems and I'm looking forward to working with you to overcome them.
         </p>
-        <div class="d-flex justify-content-center mt-3">
-            <%= link_to 'Contact me now!', contact_path, class: 'btn btn-primary btn-lg' %>
-        </div>
     </div>
     <div class="col-12 col-lg-7">
         <%= render 'layouts/lgimage', locals: {folder: "static", filename: "code.jpg"} %>
     </div>
 </div>
+<%= render 'layouts/call_to_action' %>

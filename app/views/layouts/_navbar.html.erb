@@ -8,9 +8,9 @@
     <%= link_to 'Home', root_path, class: active_nav('Home', yield(:title)) %>
     <%= link_to 'Blog', posts_path, class: active_nav(['Blog', 'Tags', 'All Posts'], yield(:title)) %>
     <%= link_to 'Portfolio', static_portfolio_path, class: active_nav('Portfolio', yield(:title)) %>
-    <%= link_to 'Setup', setup_index_path, class: active_nav('Setup', yield(:title)) %>
+    <%= link_to 'My Setup', setup_index_path, class: active_nav('My Setup', yield(:title)) %>
     <%= link_to 'About Me', static_aboutme_path, class: active_nav('About Me', yield(:title)) %>
-    <%= link_to 'Contact', contact_path, class: active_nav('Contact Me', yield(:title)) %>
+    <%= link_to 'Contact Me', contact_path, class: active_nav('Contact Me', yield(:title)) %>
     </div>
     <div class="navbar-nav">
 

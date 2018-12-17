@@ -14,4 +14,8 @@ module PostsHelper
       'nav-link bg-grey1'
     end
   end
+
+  def show_page
+    !params[:id].nil?
+  end
 end

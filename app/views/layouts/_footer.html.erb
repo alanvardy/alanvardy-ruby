@@ -2,7 +2,9 @@
     <div class="row">
         <div class="col-12 col-md-6 d-flex justify-content-between justify-content-md-start">
             <a href="mailto:alan@alanvardy.com" class="nostyle"><i class="fas fa-copyright"></i><small> <%= Time.now.year %> Alan Vardy</small></a>
-            <a href="/login" class="nostyle ml-md-3"><i class="fas fa-sign-in-alt"></i><small> Admin Login</small></a>
+                    <%= link_to(login_path, html_options = { class: "nostyle ml-md-3" }) do %>
+                        <i class="fas fa-sign-in-alt"></i><small> Admin Login</small>
+                    <% end %>
         </div>
 
         <div class="col-12 col-md-6 d-flex justify-content-between justify-content-md-end">
