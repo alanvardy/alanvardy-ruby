@@ -12,7 +12,7 @@
 
 </ul>
 </div>
-  <div class="container rounded-top  bg-grey1 px-5 mt-0 py-5">
+  <div class="container rounded-top bg-grey1 px-3 px-md-5 mt-0 py-5">
   <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
 <% end %>
