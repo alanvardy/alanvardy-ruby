@@ -14,12 +14,7 @@
   <body class="bg-grey3 text-dark">
   <%= render 'layouts/navbar' %>
     <%= yield %>
-  <% if session[:current_user] %>
-  <p class="mt-1">
-    <%= link_to 'New Post', new_post_path, class: "btn btn-sm btn-outline-info" %>
-    <%= link_to 'Log out', session_path('logout'), method: :delete, class: 'btn btn-sm btn-outline-info' %>
-  </p>
-  <% end %>
+
   </div>
   <%= render 'layouts/footer' %>
   </body>
