@@ -1,0 +1,37 @@
+<% provide(:title, "Portfolio") %>
+<%= render 'layouts/top_of_page' %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Weburl:</strong>
+  <%= @project.weburl %>
+</p>
+
+<p>
+  <strong>Giturl:</strong>
+  <%= @project.giturl %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @project.image %>
+</p>
+
+<p>
+  <strong>More:</strong>
+  <%= @project.more %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

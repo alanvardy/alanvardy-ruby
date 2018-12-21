@@ -6,11 +6,6 @@ class StaticControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get portfolio" do
-    get static_portfolio_url
-    assert_response :success
-  end
-
   test "should get aboutme" do
     get static_aboutme_url
     assert_response :success
