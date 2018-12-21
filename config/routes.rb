@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :projects
   root 'static#index'
   get 'login', to: 'sessions#new'
+  get 'portfolio', to: 'projects#index'
   get 'posts/list'
   get 'sessions/new'
   get 'setup/ubuntu'
@@ -15,7 +17,6 @@ Rails.application.routes.draw do
   get 'setup/misc'
   get 'setup/issues'
   get 'static/index'
-  get 'static/portfolio'
   get 'static/aboutme'
   get 'contact', to: 'messages#new'
   get 'messages/new'

@@ -7,14 +7,15 @@
     <div class="navbar-nav mr-auto">
     <%= link_to 'Home', root_path, class: active_nav('Home', yield(:title)) %>
     <%= link_to 'Blog', posts_path, class: active_nav(['Blog', 'Tags', 'All Posts'], yield(:title)) %>
-    <%= link_to 'Portfolio', static_portfolio_path, class: active_nav('Portfolio', yield(:title)) %>
+    <%= link_to 'Portfolio', portfolio_path, class: active_nav('Portfolio', yield(:title)) %>
     <%= link_to 'My Setup', setup_index_path, class: active_nav('My Setup', yield(:title)) %>
     <%= link_to 'About Me', static_aboutme_path, class: active_nav('About Me', yield(:title)) %>
     <%= link_to 'Contact Me', contact_path, class: active_nav('Contact Me', yield(:title)) %>
     </div>
     <div class="navbar-nav">
       <% if session[:current_user] %>
-        <%= link_to 'New Post', new_post_path, class: "btn btn-sm btn-info" %>
+        <%= link_to 'New Project', new_project_path, class: "btn btn-sm btn-info ml-2" %>
+        <%= link_to 'New Post', new_post_path, class: "btn btn-sm btn-info ml-2" %>
         <%= link_to 'Log out', session_path('logout'), method: :delete, class: 'btn btn-sm btn-info ml-2' %>
       <% end %>
     </div>
