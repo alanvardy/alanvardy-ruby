@@ -23,7 +23,7 @@
 
 <p class="mt-1">
   <%= link_to 'Back', tags_path, class: "btn btn-sm btn-outline-primary" %>
-  <% if session[:current_user] %>
+  <% if admin? %>
     <%= link_to 'Edit', edit_tag_path(@tag), class: "btn btn-sm btn-outline-primary" %>
   <% end %>
 </p>

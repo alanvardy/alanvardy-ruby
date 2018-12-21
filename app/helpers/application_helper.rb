@@ -10,7 +10,6 @@ module ApplicationHelper
       super extensions.merge(link_attributes: { target: 'blank' })
     end
     include Rouge::Plugins::Redcarpet
-
   end
 
   def date(sequence)
@@ -23,5 +22,9 @@ module ApplicationHelper
     else
       'nav-item nav-link'
     end
+  end
+
+  def admin?
+    session[:current_user]
   end
 end

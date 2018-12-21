@@ -13,7 +13,7 @@
     <%= link_to 'Contact Me', contact_path, class: active_nav('Contact Me', yield(:title)) %>
     </div>
     <div class="navbar-nav">
-      <% if session[:current_user] %>
+      <% if admin? %>
         <%= link_to 'New Project', new_project_path, class: "btn btn-sm btn-info ml-2" %>
         <%= link_to 'New Post', new_post_path, class: "btn btn-sm btn-info ml-2" %>
         <%= link_to 'Log out', session_path('logout'), method: :delete, class: 'btn btn-sm btn-info ml-2' %>
