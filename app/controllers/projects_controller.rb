@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all.order(featured: :asc)
+    @projects = Project.all.partition { |item| item.featured == true }.flatten
   end
 
   # GET /projects/1
