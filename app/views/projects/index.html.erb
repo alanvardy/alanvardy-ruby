@@ -6,12 +6,14 @@
   <% @projects.each do |project| %>
     <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center pt-5">
         <div class="card shadow-sm" style="width: 18rem;">
-            <a href="<%= project.picture_url %>" target=”_blank” ><%= image_tag "portfolio/#{project.image}", class: 'card-img-top w-100' %></a>
+            <%= link_to(project.picture_url) do %>
+                <%= image_tag "portfolio/#{project.image}", class: 'card-img-top w-100' %>
+            <% end %>
             <div class="card-body bg-grey0">
                 <h5 class="card-title"><%= project.title %></h5>
                 <p class="card-text text-muted"><%= project.description %></p>
                 <% if project.more != "#" %>
-                    <%= link_to 'Learn more', project, class: 'btn btn-outline-primary' %>
+                    <small><%= link_to 'Learn more', project %></small>
                 <% end %>
             </div>
               <div class="card-footer d-flex justify-content-around">

@@ -3,17 +3,21 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
+  <div class="form-inputs row">
+  <div class="col-12 col-lg-6">
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :weburl %>
     <%= f.input :giturl %>
     <%= f.input :image %>
-    <%= f.input :more %>
     <%= f.input :featured %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="col-12 col-lg-6">
+    <%= f.input :more, input_html: { rows: 18 } %>
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
   </div>
+  </div>
+
 <% end %>
