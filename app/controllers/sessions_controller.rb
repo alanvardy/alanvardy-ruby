@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
     if @user.login_valid?
       session[:current_user] = true
       flash[:success] = 'You have logged in'
-      redirect_to posts_path
+      redirect_to root_path
     else
       @user.password = nil
       flash[:notice] = 'Sorry, wrong credentials'
