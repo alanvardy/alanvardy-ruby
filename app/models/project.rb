@@ -2,14 +2,20 @@
 
 class Project < ApplicationRecord
   def picture_url
-    weburl? ? giturl : weburl
+    if !more.empty?
+      self
+    elsif weburl?
+      weburl
+    else
+      giturl
+    end
   end
 
   def weburl?
-    weburl != '#' || ''
+    !weburl.empty?
   end
 
   def giturl?
-    giturl != '#' || ''
+    !giturl.empty?
   end
 end
