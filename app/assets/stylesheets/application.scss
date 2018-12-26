@@ -16,6 +16,8 @@ $theme-colors: ("grey0": hsl(204, 0%, 100%),
 "grey1": hsl(204, 2%, 93%),
 "grey2": hsl(204, 3%, 85%),
 "grey3": hsl(204, 6%, 60%),
+"grey4": hsl(204, 9%, 45%),
+"grey5": hsl(204, 12%, 30%),
 "primary": hsl(205, 68%, 20%),
 "secondary": hsl(14, 95%, 34%),
 "dark": hsl(220, 68%, 7%),
@@ -33,6 +35,9 @@ $font-family-base: 'Open Sans';
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+ul.pagination li a {
+  color: map_get($theme-colors, 'grey4');
+}
 
 .nav-link {
   border-bottom: 1px solid transparent;
@@ -75,7 +80,7 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
