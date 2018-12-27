@@ -9,7 +9,7 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
   class ActionDispatch::IntegrationTest
     def login_user
-      session[:current_user] = true
+      post sessions_url, params: { user: { username: 'foo', password: 'bar' } }
     end
   end
 end
