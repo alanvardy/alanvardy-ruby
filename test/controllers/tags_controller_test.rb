@@ -72,11 +72,11 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to sessions_new_path
   end
 
-  test "should destroy tag with login" do
-    login_user
-    assert_difference('Tag.count', -1) do
-      delete tag_url(@tag)
-    end
-    assert_redirected_to tags_url
-  end
+  # test "should destroy tag with login" do
+  #   login_user
+  #   assert_difference('Tag.count', -1) do
+  #     delete tag_url(@tag)
+  #   end
+  #   assert_redirected_to tags_url
+  # end
 end

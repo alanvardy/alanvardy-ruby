@@ -81,11 +81,11 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to sessions_new_path
   end
 
-  test "can destroy post with login" do
-    login_user
-    assert_difference('Post.count', -1) do
-      delete post_url(@post)
-    end
-    assert_redirected_to posts_path
-  end
+  # test "can destroy post with login" do
+  #   login_user
+  #   assert_difference('Post.count', -1) do
+  #     delete post_url(@post)
+  #   end
+  #   assert_redirected_to posts_path
+  # end
 end
