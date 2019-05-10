@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
 
-gem 'dotenv-rails', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use sqlite3 as the database for Active Record
@@ -79,8 +78,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rubocop', groups: %i[development test]
 gem 'rubocop-performance', groups: %i[development test]
 gem 'annotate', group: :development
-gem 'bullet', group: :development
+gem 'bullet', groups: %i[development test]
 gem 'solargraph', group: :development
 gem 'fasterer', group: :development
 gem 'debride', group: :development
 gem 'reek', group: :development
+gem 'dokku-cli', group: :development
+gem 'dotenv-rails', groups: %i[development test]
