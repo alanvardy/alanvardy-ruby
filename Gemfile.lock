@@ -135,7 +135,7 @@ GEM
       colorize (~> 0.7)
       ruby_parser (>= 3.13.0)
     ffi (1.10.0)
-    font-awesome-sass (5.5.0.1)
+    font-awesome-sass (5.8.1)
       sassc (>= 1.11)
     formatador (0.2.5)
     globalid (0.4.2)
@@ -379,7 +379,7 @@ DEPENDENCIES
   dokku-cli
   dotenv-rails
   fasterer
-  font-awesome-sass (~> 5.5.0)
+  font-awesome-sass (~> 5.8.1)
   guard
   guard-minitest
   jbuilder (~> 2.5)
