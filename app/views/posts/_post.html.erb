@@ -31,7 +31,7 @@
             <p><%= markdown_text(post.content) %></p>
           <% end %>
           <% if show_page %>
-            <p><small class="text-muted">Written by <a href="mailto:alan@alanvardy.com">Alan Vardy</a></small></p>
+            <p><small class="text-muted">Written by <%= link_to 'Alan Vardy', contact_path %>. Let me know how I can make this better!</small></p>
           <% end %>
         </div>
           <div class="<%= 'rounded-right bg-secondary px-1 mb-4' if !show_page %>">
