@@ -6,7 +6,7 @@ update_configs:
     default_reviewers:
     - "alanvardy"
     automerged_updates:
-      - match: {dependency_type: "all", update_type: "all"}
+      # - match: {dependency_type: "all", update_type: "all"}
           # Supported dependency types:
           # - "development"
           # - "production"
