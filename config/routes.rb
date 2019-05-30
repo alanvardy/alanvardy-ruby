@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :technologies
   resources :projects
   root 'static#index'
   get 'login', to: 'sessions#new'

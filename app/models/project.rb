@@ -1,6 +1,6 @@
-# frozen_string_literal: true
-
 class Project < ApplicationRecord
+  has_many :technologies, through: :project_technologies
+
   def picture_url
     if !more.empty?
       self

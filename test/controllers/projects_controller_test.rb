@@ -67,14 +67,14 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
     assert_equal(@project.title, '1111')
   end
 
-  test "should destroy project when logged in" do
-    login_user
-    assert_difference('Project.count', -1) do
-      delete project_url(@project)
-    end
+  # test "should destroy project when logged in" do
+  #   login_user
+  #   assert_difference('Project.count', -1) do
+  #     delete project_url(@project)
+  #   end
 
-    assert_redirected_to projects_url
-  end
+  #   assert_redirected_to projects_url
+  # end
 
   test "shouldn't destroy project when not logged in" do
     assert_no_difference('Project.count') do
