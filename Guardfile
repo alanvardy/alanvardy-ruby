@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Defines the matching rules for Guard.
 guard :minitest, spring: true, all_on_start: false do
   watch(%r{^test/(.*)/?(.*)_test\.rb$})

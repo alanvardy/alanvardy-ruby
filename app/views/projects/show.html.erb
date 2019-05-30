@@ -13,7 +13,7 @@
 
   </div>
   <div class="col-12 col-lg-6">
-    <%= render 'layouts/lgimage', locals: {folder: 'portfolio', filename: @project.image} %>
+    <%= render 'layouts/lgimage', locals: {folder: 'portfolio/sites', filename: @project.image} %>
     <div class="d-flex justify-content-center">
       <% if @project.weburl? %>
           <a href="<%= @project.weburl %>" class="btn btn-primary mr-2" target=”_blank” >Website</a>
