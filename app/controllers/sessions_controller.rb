@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
 
   def create
     # sleep 2 # you can add sleep here  if you want to  slow down brute force attack
-              # for normal application this is bad idea but for one
-              # user login no-one care
+    # for normal application this is bad idea but for one
+    # user login no-one care
 
     user_params = params.require(:user).permit(:username, :password)
 
