@@ -1,0 +1,14 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/{rails,rake}'
+Style/FrozenStringLiteralComment: { Enabled: false }
+Style/MutableConstant: { Enabled: false }
+Metrics/LineLength: {AutoCorrect: true, Max: 100}
+Style/SymbolArray: { Enabled: false }
+Style/WordArray: { Enabled: false }
