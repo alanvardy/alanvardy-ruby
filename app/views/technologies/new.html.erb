@@ -1,5 +1,10 @@
-<h1>New Technology</h1>
+<% provide(:title, "Technologies") %>
+<%= render 'layouts/top_of_page' %>
+<div class="border-secondary pl-3 border-left">
+    <h1>New Technology</h1>
 
-<%= render 'form', technology: @technology %>
+    <%= render 'form', technology: @technology %>
 
-<%= link_to 'Back', technologies_path %>
+    <%= link_to 'Back', technologies_path %>
+</div>
+</div>

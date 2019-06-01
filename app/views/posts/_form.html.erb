@@ -1,14 +1,12 @@
-
-
-  <%= simple_form_for @post do |f| %>
-  <div class="row">
-<div class = 'col-md-8'>
+<%= simple_form_for @post do |f| %>
+<div class="row">
+  <div class='col-md-8'>
     <%= f.input :title %>
     <%= f.input :content, input_html: { rows: 18 } %>
-</div>
-<div class="col-md-4">
+  </div>
+  <div class="col-md-4">
     <%= f.input :tag_ids, as: :select, collection: Tag.order(:name), label_method: :name, input_html: {multiple: true, size: 20} %>
     <%= f.submit "Save", class: 'btn btn-lg btn-outline-primary float-right' %>
-</div>
   </div>
-  <% end %>
+</div>
+<% end %>

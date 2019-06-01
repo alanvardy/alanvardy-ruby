@@ -1,42 +1,41 @@
+<div class="<%= 'd-flex' if !show_page %>">
+  <% if show_page %>
+  <h1><%= post.title %></h1>
+  <p class="mb-2">
+    <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated:
+      <%= post.updated_at.to_formatted_s(:long) %><br>
+      Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
+  </p>
+  <% end %>
+  <div class="mb-4 flex-fill rounded-left bg-grey0 p-3 shadow-sm markdown">
+    <% if show_page %>
+    <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: admin?}%>
+    <% end %>
+    <% if !show_page %>
+    <%= link_to(post, html_options = {}) do %>
+    <h2><%= post.title %></h2>
+    <% end %>
 
+    <small class="text-muted">Created: <%= date(post.created_at) %> | Updated: <%= date(post.updated_at) %><br>
+      Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
 
-        <div class="<%= 'd-flex' if !show_page %>">
-          <% if show_page %>
-            <h1><%= post.title %></h1>
-                        <p class="mb-2">
-            <small class="text-muted">Created: <%= post.created_at.to_formatted_s(:long) %> | Updated: <%= post.updated_at.to_formatted_s(:long) %><br>
-            Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
-                        </p>
-          <% end %>
-        <div class="mb-4 flex-fill rounded-left bg-grey0 p-3 shadow-sm markdown">
-        <% if show_page %>
-          <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: admin?}%>
-        <% end %>
-          <% if !show_page %>
-            <%= link_to(post, html_options = {}) do %>
-              <h2><%= post.title %></h2>
-            <% end %>
+    <% end %>
 
-            <small class="text-muted">Created: <%= date(post.created_at) %> | Updated: <%= date(post.updated_at) %><br>
-            Tags: <%= raw post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></small>
-
-          <% end %>
-
-              <% if !show_page %>
-              <small class="text-muted"><%= markdown_text(post.content.truncate(200)) %></small>
-              <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-secondary"%>
-                <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: admin? }%>
-              </p>
-          <% else %>
-            <p><%= markdown_text(post.content) %></p>
-          <% end %>
-          <% if show_page %>
-            <p><small class="text-muted">Written by <%= link_to 'Alan Vardy', contact_path %>. Let me know how I can make this better!</small></p>
-          <% end %>
-        </div>
-          <div class="<%= 'rounded-right bg-secondary px-1 mb-4' if !show_page %>">
-          </div>
-          <div class="<%= 'px-3' if !show_page %>">
-          </div>
-        </div>
-
+    <% if !show_page %>
+    <small class="text-muted"><%= markdown_text(post.content.truncate(200)) %></small>
+    <p><%= link_to 'View Post', post, class: "btn btn-sm btn-outline-secondary"%>
+      <%= render partial: 'layouts/post_admin_buttons', locals: {post: post, admin: admin? }%>
+    </p>
+    <% else %>
+    <p><%= markdown_text(post.content) %></p>
+    <% end %>
+    <% if show_page %>
+    <p><small class="text-muted">Written by <%= link_to 'Alan Vardy', contact_path %>. Let me know how I can make this
+        better!</small></p>
+    <% end %>
+  </div>
+  <div class="<%= 'rounded-right bg-secondary px-1 mb-4' if !show_page %>">
+  </div>
+  <div class="<%= 'px-3' if !show_page %>">
+  </div>
+</div>

@@ -1,6 +1,11 @@
+<% provide(:title, "Technologies") %>
 <h1>Editing Technology</h1>
 
-<%= render 'form', technology: @technology %>
+<%= render 'layouts/top_of_page' %>
+<div class="border-secondary pl-3 border-left">
+    <%= render 'form', technology: @technology %>
 
-<%= link_to 'Show', @technology %> |
-<%= link_to 'Back', technologies_path %>
+    <%= link_to 'Show', @technology %> |
+    <%= link_to 'Back', technologies_path %>
+</div>
+</div>

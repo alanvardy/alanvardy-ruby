@@ -2,31 +2,29 @@
 <%= render 'layouts/top_of_page' %>
 <div class="row">
   <div class="col-12 col-lg-6">
-    <h2>  <%= @project.title %></h2>
+    <h2> <%= @project.title %></h2>
     <p>
       <em><%= @project.description %></em>
     </p>
-
     <p>
       <%= markdown_text(@project.more) %>
     </p>
-
   </div>
   <div class="col-12 col-lg-6">
     <%= render 'layouts/lgimage', locals: {folder: 'portfolio/sites', filename: @project.image} %>
     <div class="d-flex justify-content-center">
       <% if @project.weburl? %>
-          <a href="<%= @project.weburl %>" class="btn btn-primary mr-2" target=”_blank” >Website</a>
+      <a href="<%= @project.weburl %>" class="btn btn-primary mr-2" target=”_blank”>Website</a>
       <% end %>
       <% if @project.giturl? %>
-          <a href="<%= @project.giturl %>" class="btn btn-outline-secondary ml-2" target=”_blank” >Github</a>
+      <a href="<%= @project.giturl %>" class="btn btn-outline-secondary ml-2" target=”_blank”>Github</a>
       <% end %>
     </div>
   </div>
 </div>
 
 <% if admin? %>
-  <%= link_to 'Edit', edit_project_path(@project) %> |
-  <%= link_to 'Back', projects_path %> |
-  <%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %> |
+<%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
