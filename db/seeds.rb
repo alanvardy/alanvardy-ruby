@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 posts = [
-  { title: "Test", content: "This is content" }
+  { title: 'Test', content: 'This is content' }
 ]
 
 posts.each do |post|

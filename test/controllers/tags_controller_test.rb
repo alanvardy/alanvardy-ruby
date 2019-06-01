@@ -17,7 +17,7 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to sessions_new_path
   end
 
-  test "should get new with login" do
+  test 'should get new with login' do
     login_user
     get new_tag_url
     assert_response :success
@@ -30,7 +30,7 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to sessions_new_path
   end
 
-  test "should create tag with login" do
+  test 'should create tag with login' do
     login_user
     assert_difference('Tag.count', 1) do
       post tags_url, params: { tag: { name: @tag.name } }
@@ -48,7 +48,7 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to sessions_new_path
   end
 
-  test "should get edit with login" do
+  test 'should get edit with login' do
     login_user
     get edit_tag_url(@tag)
     assert_response :success
@@ -59,7 +59,7 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to sessions_new_path
   end
 
-  test "should update tag with login" do
+  test 'should update tag with login' do
     login_user
     patch tag_url(@tag), params: { tag: { name: @tag.name } }
     assert_redirected_to tag_url(@tag)
