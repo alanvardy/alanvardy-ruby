@@ -84,4 +84,6 @@ gem 'reek', group: :development
 gem 'rubocop', groups: %i[development test]
 gem 'rubocop-performance', groups: %i[development test]
 gem 'rubocop-rails', groups: %i[development test]
+gem 'rubycritic', group: :development
+gem 'brakeman', group: :development
 gem 'solargraph', group: :development
