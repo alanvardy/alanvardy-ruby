@@ -1,5 +1,6 @@
 require 'mailgun-ruby'
 
+# For sending mailgun messages from the contact page
 class Message
   include ActiveModel::Model
   attr_accessor :name, :email, :phone_number, :body
