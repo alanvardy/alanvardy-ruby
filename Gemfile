@@ -10,7 +10,7 @@ gem 'rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sassc'
 # Use Uglifier as compressor for JavaScript assets
 gem 'font-awesome-sass', '~> 5.8.1'
 gem 'uglifier', '>= 1.3.0'
@@ -65,9 +65,9 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
   gem 'guard'
   gem 'guard-minitest'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -75,6 +75,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Tools
 gem 'annotate', group: :development
+gem 'brakeman', groups: :development
 gem 'bullet', groups: %i[development test]
 gem 'debride', group: :development
 gem 'dokku-cli', group: :development
