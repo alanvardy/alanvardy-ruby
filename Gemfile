@@ -75,7 +75,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Tools
 gem 'annotate', group: :development
-gem 'brakeman', groups: :development
+gem 'brakeman', group: :development
 gem 'bullet', groups: %i[development test]
 gem 'debride', group: :development
 gem 'dokku-cli', group: :development
@@ -85,4 +85,5 @@ gem 'reek', group: :development
 gem 'rubocop', groups: %i[development test]
 gem 'rubocop-performance', groups: %i[development test]
 gem 'rubocop-rails', groups: %i[development test]
+gem 'rubycritic', group: :development
 gem 'solargraph', group: :development
