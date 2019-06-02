@@ -256,7 +256,7 @@ GEM
     reverse_markdown (1.1.0)
       nokogiri
     rouge (3.3.0)
-    rubocop (0.70.0)
+    rubocop (0.71.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
