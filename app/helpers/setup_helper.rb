@@ -1,3 +1,4 @@
+# typed: ignore
 include ApplicationHelper
 
 module SetupHelper
