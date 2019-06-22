@@ -1,3 +1,4 @@
+# typed: false
 require 'test_helper'
 
 class SetupControllerTest < ActionDispatch::IntegrationTest

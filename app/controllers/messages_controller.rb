@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# typed: true
 
 class MessagesController < ApplicationController
   def new
@@ -21,5 +21,5 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:name, :email, :phone_number, :body)
-    end
+  end
 end
