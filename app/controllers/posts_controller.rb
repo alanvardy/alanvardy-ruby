@@ -1,5 +1,4 @@
 # typed: true
-# frozen_string_literal: true
 
 require 'will_paginate/array'
 
@@ -34,42 +33,34 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
-    respond_to do |format|
+
       if @post.save
         flash[:success] = 'Post was successfully saved.'
-        format.html { redirect_to @post }
-        format.json { render :show, status: :created, location: @post }
+        redirect_to @post
       else
-        format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
+        render :new
     end
   end
 
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    respond_to do |format|
+
       if @post.update(post_params)
         flash[:success] = 'Post was successfully updated.'
-        format.html { redirect_to @post }
-        format.json { render :show, status: :ok, location: @post }
+        redirect_to @post
       else
-        format.html { render :edit }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        render :edit
       end
-    end
   end
 
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-    respond_to do |format|
+
       flash[:info] = 'Post was successfully destroyed.'
-      format.html { redirect_to posts_url }
-      format.json { head :no_content }
-    end
+      redirect_to posts_url
   end
 
   private
@@ -81,7 +72,8 @@ class PostsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def post_params
-    params.require(:post).permit(:title, :content, :user_id, :tag_list, :tag, { tag_ids: [] },
-                                 :tag_ids)
+    params.require(:post).permit(
+      :title, :content, :user_id, :tag_list, :tag, { tag_ids: [] }, :tag_ids
+    )
   end
 end
