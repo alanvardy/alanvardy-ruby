@@ -68,6 +68,10 @@ jobs: # a collection of steps
           name: Run Tests
           command: bundle exec rails test
 
+      - run:
+          name: Run Brakeman
+          command: bundle exec brakeman
+
       # - run:
       #     name: Run Sorbet
       #     command: bundle exec srb
