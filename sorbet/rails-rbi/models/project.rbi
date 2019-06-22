@@ -35,10 +35,10 @@ class Project < ApplicationRecord
   sig { params(args: T.untyped).returns(T::Boolean) }
   def featured?(*args); end
 
-  sig { returns(String) }
+  sig { returns(T.nilable(String)) }
   def giturl(); end
 
-  sig { params(value: String).void }
+  sig { params(value: T.nilable(String)).void }
   def giturl=(value); end
 
   sig { returns(Integer) }

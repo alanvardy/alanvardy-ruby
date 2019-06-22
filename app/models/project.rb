@@ -1,4 +1,4 @@
-# typed: true
+# typed: strict
 
 class Project < ApplicationRecord
   extend T::Sig

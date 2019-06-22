@@ -1,5 +1,5 @@
-# typed: true
-# frozen_string_literal: true
+# typed: strict
+
 
 class Post < ApplicationRecord
   extend T::Sig
