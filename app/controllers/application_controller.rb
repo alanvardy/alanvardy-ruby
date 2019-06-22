@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 
 class ApplicationController < ActionController::Base
   ApplicationNotAuthenticated = Class.new(StandardError)

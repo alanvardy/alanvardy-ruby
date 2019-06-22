@@ -7,7 +7,6 @@ class PostsController < ApplicationController
   before_action :authentication_required!, except: %i[index list show]
 
   # GET /posts
-  # GET /posts.json
   def index
     @posts = Post.all.order(created_at: :desc).paginate(page: params[:page], per_page: 3)
   end
@@ -17,7 +16,6 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1
-  # GET /posts/1.json
   def show; end
 
   # GET /posts/new
@@ -29,38 +27,32 @@ class PostsController < ApplicationController
   def edit; end
 
   # POST /posts
-  # POST /posts.json
   def create
     @post = Post.new(post_params)
-
-
-      if @post.save
-        flash[:success] = 'Post was successfully saved.'
-        redirect_to @post
-      else
-        render :new
+    if @post.save
+      flash[:success] = 'Post was successfully saved.'
+      redirect_to @post
+    else
+      render :new
     end
   end
 
   # PATCH/PUT /posts/1
-  # PATCH/PUT /posts/1.json
   def update
-
-      if @post.update(post_params)
-        flash[:success] = 'Post was successfully updated.'
-        redirect_to @post
-      else
-        render :edit
-      end
+    if @post.update(post_params)
+      flash[:success] = 'Post was successfully updated.'
+      redirect_to @post
+    else
+      render :edit
+    end
   end
 
   # DELETE /posts/1
-  # DELETE /posts/1.json
   def destroy
     @post.destroy
 
-      flash[:info] = 'Post was successfully destroyed.'
-      redirect_to posts_url
+    flash[:info] = 'Post was successfully destroyed.'
+    redirect_to posts_url
   end
 
   private

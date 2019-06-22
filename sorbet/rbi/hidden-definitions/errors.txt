@@ -653,67 +653,6 @@
 # wrong constant name gem_version
 # wrong constant name server
 # wrong constant name version
-# wrong constant name <Class:API>
-# wrong constant name <Class:ActionControllerError>
-# wrong constant name <Class:ApiRendering>
-# wrong constant name <Class:BadRequest>
-# wrong constant name <Class:Base>
-# wrong constant name <Class:BasicImplicitRender>
-# wrong constant name <Class:Caching>
-# wrong constant name <Class:ConditionalGet>
-# wrong constant name <Class:ContentSecurityPolicy>
-# wrong constant name <Class:Cookies>
-# wrong constant name <Class:DataStreaming>
-# wrong constant name <Class:EtagWithFlash>
-# wrong constant name <Class:EtagWithTemplateDigest>
-# wrong constant name <Class:Flash>
-# wrong constant name <Class:ForceSSL>
-# wrong constant name <Class:FormBuilder>
-# wrong constant name <Class:Head>
-# wrong constant name <Class:Helpers>
-# wrong constant name <Class:HttpAuthentication>
-# wrong constant name <Class:ImplicitRender>
-# wrong constant name <Class:Instrumentation>
-# wrong constant name <Class:InvalidAuthenticityToken>
-# wrong constant name <Class:InvalidCrossOriginRequest>
-# wrong constant name <Class:Live>
-# wrong constant name <Class:LiveTestResponse>
-# wrong constant name <Class:LogSubscriber>
-# wrong constant name <Class:Metal>
-# wrong constant name <Class:MethodNotAllowed>
-# wrong constant name <Class:MiddlewareStack>
-# wrong constant name <Class:MimeResponds>
-# wrong constant name <Class:MissingFile>
-# wrong constant name <Class:MissingRenderer>
-# wrong constant name <Class:NotImplemented>
-# wrong constant name <Class:ParameterEncoding>
-# wrong constant name <Class:ParameterMissing>
-# wrong constant name <Class:Parameters>
-# wrong constant name <Class:ParamsWrapper>
-# wrong constant name <Class:Railtie>
-# wrong constant name <Class:Railties>
-# wrong constant name <Class:Redirecting>
-# wrong constant name <Class:RenderError>
-# wrong constant name <Class:Renderer>
-# wrong constant name <Class:Renderers>
-# wrong constant name <Class:Rendering>
-# wrong constant name <Class:RequestForgeryProtection>
-# wrong constant name <Class:Rescue>
-# wrong constant name <Class:RoutingError>
-# wrong constant name <Class:SessionOverflowError>
-# wrong constant name <Class:Streaming>
-# wrong constant name <Class:StrongParameters>
-# wrong constant name <Class:TemplateAssertions>
-# wrong constant name <Class:TestCase>
-# wrong constant name <Class:TestRequest>
-# wrong constant name <Class:TestSession>
-# wrong constant name <Class:Testing>
-# wrong constant name <Class:UnfilteredParameters>
-# wrong constant name <Class:UnknownFormat>
-# wrong constant name <Class:UnknownHttpMethod>
-# wrong constant name <Class:UnpermittedParameters>
-# wrong constant name <Class:UrlFor>
-# wrong constant name <Class:UrlGenerationError>
 # uninitialized constant ActionController::API::ACTION_OPTIONS
 # uninitialized constant ActionController::API::CALLBACK_FILTER_TYPES
 # uninitialized constant ActionController::API::DEFAULT_PROTECTED_INSTANCE_VARIABLES
@@ -896,7 +835,6 @@
 # wrong constant name rescue_handlers?
 # wrong constant name stylesheets_dir
 # wrong constant name stylesheets_dir=
-# wrong constant name <static-init>
 # wrong constant name __callbacks
 # wrong constant name __callbacks=
 # wrong constant name __callbacks?
@@ -10610,20 +10548,6 @@
 # wrong constant name strip_on_removal
 # wrong constant name where_header_found
 # uninitialized constant ApplicationCable::Channel::CALLBACK_FILTER_TYPES
-# uninitialized constant ApplicationController::ACTION_OPTIONS
-# uninitialized constant ApplicationController::AUTHENTICITY_TOKEN_LENGTH
-# uninitialized constant ApplicationController::CALLBACK_FILTER_TYPES
-# uninitialized constant ApplicationController::DEFAULT_PROTECTED_INSTANCE_VARIABLES
-# uninitialized constant ApplicationController::DEFAULT_SEND_FILE_DISPOSITION
-# uninitialized constant ApplicationController::DEFAULT_SEND_FILE_TYPE
-# uninitialized constant ApplicationController::EXCLUDE_PARAMETERS
-# uninitialized constant ApplicationController::MODULES
-# uninitialized constant ApplicationController::NULL_ORIGIN_MESSAGE
-# uninitialized constant ApplicationController::PROTECTED_IVARS
-# uninitialized constant ApplicationController::REDIRECT_OPTIONS
-# uninitialized constant ApplicationController::RENDERERS
-# uninitialized constant ApplicationController::RENDER_FORMATS_IN_PRIORITY
-# uninitialized constant ApplicationController::URL_OPTIONS
 # uninitialized constant ApplicationJob::CALLBACK_FILTER_TYPES
 # uninitialized constant ApplicationRecord::ACTIONS
 # uninitialized constant ApplicationRecord::BLACKLISTED_CLASS_METHODS
@@ -30933,6 +30857,10 @@
 # wrong constant name before_remove_for_tags
 # wrong constant name before_remove_for_tags=
 # wrong constant name before_remove_for_tags?
+# wrong constant name active_tab
+# wrong constant name markdown_text
+# wrong constant name show_page
+# wrong constant name <static-init>
 # undefined method `curry$1' for class `Proc'
 # wrong constant name <<
 # wrong constant name ===
@@ -50364,6 +50292,8 @@
 # wrong constant name pretty_print
 # wrong constant name pretty_print_cycle
 # wrong constant name reset
+# wrong constant name markdown_file
+# wrong constant name <static-init>
 # wrong constant name /
 # wrong constant name ==
 # wrong constant name =~
@@ -55753,15 +55683,15 @@
 # wrong constant name pagination_options
 # wrong constant name pagination_options=
 # wrong constant name <static-init>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c0e3488 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c0e3528 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884cf98c0 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884cf9960 @expression=:this_node, @arguments=[]>, :parent, []]>
 # wrong constant name <Class:DSL>
 # wrong constant name <Class:Expression>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c0eaf80 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c0eb020 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884d013b8 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884d01458 @expression=:this_node, @arguments=[]>, :parent, []]>
 # wrong constant name <Class:Literal>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c0f38d8 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c0f3978 @expression=:this_node, @arguments=[]>, :parent, []]>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c0f0f70 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c0f1010 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884d09d38 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884d09dd8 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884d13360 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884d13400 @expression=:this_node, @arguments=[]>, :parent, []]>
 # wrong constant name <Class:Renderer>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c0f98f0 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c0f9990 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884d1bce0 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884d1bd80 @expression=:this_node, @arguments=[]>, :parent, []]>
 # wrong constant name <Class:Union>
 # wrong constant name !
 # wrong constant name !=
@@ -55856,11 +55786,11 @@
 # wrong constant name |
 # wrong constant name ~
 # wrong constant name <static-init>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c1cb1c0 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c1cb260 @expression=:this_node, @arguments=[]>, :parent, []]>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c1d2538 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c1d25d8 @expression=:this_node, @arguments=[]>, :parent, []]>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c1d98d8 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c1d9978 @expression=:this_node, @arguments=[]>, :parent, []]>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c1e0c50 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c1e0cf0 @expression=:this_node, @arguments=[]>, :parent, []]>
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c1f3fa8 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c1e8090 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884ded600 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884ded6a0 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884df4978 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884df4a18 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884e07cd0 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884e07d70 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884e0f070 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884e0f110 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884e12400 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884e124a0 @expression=:this_node, @arguments=[]>, :parent, []]>
 # wrong constant name arguments
 # wrong constant name arguments=
 # wrong constant name expression
@@ -55894,7 +55824,7 @@
 # wrong constant name where
 # wrong constant name <static-init>
 # wrong constant name render
-# Not a valid constant descriptor: #<XPath::Expression:0x000056131c23c0c8 @expression=:axis, @arguments=[#<XPath::Expression:0x000056131c23c168 @expression=:this_node, @arguments=[]>, :parent, []]>
+# Not a valid constant descriptor: #<XPath::Expression:0x000055e884e5e4b8 @expression=:axis, @arguments=[#<XPath::Expression:0x000055e884e5e558 @expression=:this_node, @arguments=[]>, :parent, []]>
 # wrong constant name arguments
 # wrong constant name each
 # wrong constant name expression

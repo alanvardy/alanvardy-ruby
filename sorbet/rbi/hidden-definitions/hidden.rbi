@@ -1232,9 +1232,6 @@ module ActionCable
   def self.version(); end
 end
 
-module ActionController
-end
-
 class ActionController::API
   include ::ActionView::ViewPaths
   include ::AbstractController::Rendering
@@ -23353,9 +23350,6 @@ end
 
 module ApplicationCable
   extend ::T::Sig
-end
-
-class ApplicationController
 end
 
 class ApplicationHelper::MarkdownRender
@@ -54946,10 +54940,6 @@ class NilClass
   def to_i(); end
 end
 
-class NilClass
-  extend ::T::Sig
-end
-
 class NoMemoryError
   extend ::T::Sig
 end
@@ -63640,6 +63630,14 @@ class Post
   def self.before_remove_for_tags=(val); end
 
   def self.before_remove_for_tags?(); end
+end
+
+module PostsHelper
+  def active_tab(pages, title); end
+
+  def markdown_text(text); end
+
+  def show_page(); end
 end
 
 module PostsHelper
@@ -102816,6 +102814,10 @@ end
 
 class Set
   extend ::T::Sig
+end
+
+module SetupHelper
+  def markdown_file(filename); end
 end
 
 module SetupHelper
