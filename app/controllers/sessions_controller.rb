@@ -1,3 +1,4 @@
+# typed: false
 # app/controllers/sessions_controller.rb
 
 class SessionsController < ApplicationController

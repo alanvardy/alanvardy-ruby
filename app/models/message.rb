@@ -1,11 +1,15 @@
+# typed: true
 require 'mailgun-ruby'
 
 # For sending mailgun messages from the contact page
 class Message
+  extend T::Sig
   include ActiveModel::Model
+  
   attr_accessor :name, :email, :phone_number, :body
   validates :name, :email, :body, presence: true
 
+  sig { void }
   def send
     mg_client = Mailgun::Client.new ENV['mailgun_secret_api_key']
     info = {
