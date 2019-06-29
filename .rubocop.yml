@@ -9,6 +9,17 @@ AllCops:
     - 'bin/{rails,rake}'
 Style/FrozenStringLiteralComment: { Enabled: false }
 Style/MutableConstant: { Enabled: false }
-Metrics/LineLength: {AutoCorrect: true, Max: 100}
-Style/SymbolArray: { Enabled: false }
-Style/WordArray: { Enabled: false }
+
+# ------------I use this only for personal projects------------------
+Metrics/LineLength: {AutoCorrect: true, Max: 80}
+
+# ------And this only when playing in other kid's sand pits----------
+# Metrics/LineLength: {AutoCorrect: false, Max: 120}
+# Style/SymbolArray: { Enabled: false }
+# Style/WordArray: { Enabled: false }
+# Style/RescueStandardError: { Enabled: false }
+# Style/IfUnlessModifier: { Enabled: false }
+# Style/BracesAroundHashParameters: { Enabled: false }
+# Style/ParenthesesAroundCondition: { Enabled: false }
+# Style/RedundantParentheses: { Enabled: false }
+# Style/TernaryParentheses: { Enabled: false }
