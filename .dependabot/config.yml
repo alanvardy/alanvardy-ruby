@@ -5,7 +5,3 @@ update_configs:
     update_schedule: "live"
     automerged_updates:
     - match: {dependency_type: "all", update_type: "all"}
-      Supported dependency types:
-      - "all"
-      Supported updates to automerge:
-      - "all"
