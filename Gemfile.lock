@@ -311,7 +311,7 @@ GEM
       yard (~> 0.9)
     sorbet (0.4.4295)
       sorbet-static (= 0.4.4295)
-    sorbet-rails (0.1.3)
+    sorbet-rails (0.2.0)
     sorbet-runtime (0.4.4356)
     sorbet-static (0.4.4295-universal-darwin-14)
     spring (2.1.0)
