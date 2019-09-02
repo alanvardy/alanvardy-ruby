@@ -270,7 +270,7 @@ GEM
       netrc (~> 0.8)
     reverse_markdown (1.2.0)
       nokogiri
-    rouge (3.8.0)
+    rouge (3.9.0)
     rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
