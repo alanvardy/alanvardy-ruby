@@ -32,3 +32,8 @@ jobs:
         bundle exec rails db:create
         bundle exec rails db:migrate
         bundle exec rails test
+        env:
+          # use postgres for the host here because we have specified a contaienr for the job.
+          # If we were running the job on the VM this would be localhost
+          POSTGRES_HOST: postgres
+          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
