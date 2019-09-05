@@ -24,6 +24,9 @@ jobs:
       with:
         ruby-version: 2.6.x
     - name: Build and test with Rake
+      env:
+        PGHOST: ${{ DB }}
+        PGUSER: alanvardy
       run: |
         sudo apt-get -yqq install libpq-dev
         gem install bundler
