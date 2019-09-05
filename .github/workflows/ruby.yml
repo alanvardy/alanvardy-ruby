@@ -25,7 +25,7 @@ jobs:
         ruby-version: 2.6.x
     - name: Build and test with Rake
       env:
-        PGHOST: ${{ DB }}
+        PGHOST: 0.0.0.0
         PGUSER: alanvardy
       run: |
         sudo apt-get -yqq install libpq-dev
