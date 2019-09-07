@@ -5,26 +5,22 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
-# Use sqlite3 as the database for Active Record
-
+# Use postgresql as the database for Active Record
+gem 'pg'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
+gem 'coffee-rails'
 gem 'sassc'
 # Use Uglifier as compressor for JavaScript assets
-gem 'font-awesome-sass'
 gem 'uglifier'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
-gem 'redcarpet'
-gem 'rouge'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -38,13 +34,6 @@ gem 'bcrypt'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
-gem 'bootstrap'
-gem 'bootstrap-will_paginate'
-gem 'jquery-rails'
-gem 'mailgun-ruby'
-gem 'pg'
-gem 'simple_form'
-gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -72,6 +61,19 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Pretty UI things
+gem 'bootstrap'
+gem 'bootstrap-will_paginate'
+gem 'font-awesome-sass'
+gem 'jquery-rails'
+gem 'redcarpet'
+gem 'rouge'
+gem 'simple_form'
+gem 'will_paginate'
+
+# APIs
+gem 'mailgun-ruby'
 
 # Tools
 gem 'annotate', group: :development
