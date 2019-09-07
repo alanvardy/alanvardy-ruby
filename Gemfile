@@ -10,7 +10,6 @@ gem 'pg'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
-gem 'coffee-rails'
 gem 'sassc'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
