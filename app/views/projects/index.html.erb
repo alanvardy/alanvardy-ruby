@@ -6,7 +6,7 @@
   <% @projects.each do |project| %>
     <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center pt-5">
         <div class="card shadow-sm" style="width: 18rem;">
-            <%= link_to(project.picture_url) do %>
+            <%= link_to(project) do %>
                 <%= image_tag "portfolio/#{project.image}", class: 'card-img-top w-100' %>
             <% end %>
             <div class="card-body bg-grey0">
