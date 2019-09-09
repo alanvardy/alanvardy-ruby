@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails', '~> 5'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -36,7 +36,7 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
@@ -59,7 +59,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Pretty UI things
 gem 'bootstrap'
@@ -89,5 +89,5 @@ gem 'rubocop-rails', groups: %i[development test]
 gem 'rubycritic', group: :development
 gem 'solargraph', group: :development
 gem 'sorbet', group: :development
-gem 'sorbet-runtime'
 gem 'sorbet-rails'
+gem 'sorbet-runtime'
