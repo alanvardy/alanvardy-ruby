@@ -1,7 +1,7 @@
 version: 1
 update_configs:
-  - package_manager: "ruby:bundler"
-    directory: "/"
+- package_manager: "ruby:bundler"
+  directory: "/"
   default_assignees:
   - "alanvardy"
     update_schedule: "live"
