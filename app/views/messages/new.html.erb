@@ -6,10 +6,16 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-6">
                     <h1>Contact Me</h1>
-                    <p>You can use the form provided or email me at <a href="mailto:alan@alanvardy.com">alan@alanvardy.com</a></p>
-                    <%= render 'layouts/lgimage', locals: {folder: "static", filename: "typewriter.jpg"} %>
-
-
+                    <p>You can send me an email using the form provided</p>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex mt-5">
+                            <%= link_to (image_tag 'static/github-mark.png'), 'https://github.com/alanvardy/', class: "ml-auto"%>
+                            <%= link_to (image_tag 'static/github-logo.png'), 'https://github.com/alanvardy/', class: "mr-auto align-self-center"%>
+                        </div>
+                        <div class="ml-auto mb-2">
+                            <p class="col">...or, find me on GitHub!</p>
+                        </div>
+                    </div>
                 </div>
             <div class="col-12 col-lg-6 align-middle">
                     <div class="bg-grey0 rounded shadow-sm p-3 mb-3 my-lg-5">
