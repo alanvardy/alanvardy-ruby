@@ -103,7 +103,7 @@ GEM
     colorize (0.8.1)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    debride (1.8.1)
+    debride (1.8.2)
       path_expander (~> 1.0)
       ruby_parser (~> 3.6)
       sexp_processor (~> 4.5)
@@ -224,7 +224,7 @@ GEM
       sorbet-runtime
     parser (2.6.5.0)
       ast (~> 2.4.0)
-    path_expander (1.0.4)
+    path_expander (1.1.0)
     pg (1.1.4)
     popper_js (1.14.5)
     pry (0.12.2)
