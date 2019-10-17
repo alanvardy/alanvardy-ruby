@@ -80,7 +80,7 @@ GEM
       sassc-rails (>= 2.0.0)
     bootstrap-will_paginate (1.0.0)
       will_paginate
-    brakeman (4.6.1)
+    brakeman (4.7.0)
     builder (3.2.3)
     bullet (6.0.2)
       activesupport (>= 3.0.0)
