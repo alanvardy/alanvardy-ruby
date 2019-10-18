@@ -339,7 +339,7 @@ GEM
       yard (~> 0.9)
     sorbet (0.4.4891)
       sorbet-static (= 0.4.4891)
-    sorbet-rails (0.5.7)
+    sorbet-rails (0.5.8)
       parlour (~> 0.8.0)
     sorbet-runtime (0.4.4891)
     sorbet-static (0.4.4891-universal-darwin-14)
