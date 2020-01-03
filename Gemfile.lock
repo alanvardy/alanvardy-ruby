@@ -274,6 +274,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    recaptcha (5.2.1)
+      json
     redcarpet (3.5.0)
     reek (5.5.0)
       codeclimate-engine-rb (~> 0.4.0)
@@ -433,6 +435,7 @@ DEPENDENCIES
   pg
   puma
   rails (~> 6)
+  recaptcha
   redcarpet
   reek
   rouge

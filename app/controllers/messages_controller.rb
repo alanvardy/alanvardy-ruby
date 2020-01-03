@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new message_params
-    if @message.valid?
+    if verify_recaptcha(model: @message) && @message.valid?
       @message.send
       redirect_to root_path
       flash[:success] = 'I have received your message and will be in touch soon!'
