@@ -1,43 +1,36 @@
 <% provide(:title, "Home") %>
 <%= render 'layouts/top_of_page' %>
 <div class="row">
-    <div class="col-12 col-lg-6">
-        <h1>Welcome!</h1>
-        <p>
-            I am Alan Vardy, a Rails Developer out of Edmonton, Alberta, Canada.
-            I am passionate about writing code, tackling challenges, and making things better
-            one step at a time.
-        </p>
-        <p>
-            My primary technology stack is Ruby, Ruby on Rails, Javascript, CSS and HTML.
-        </p>
-        <p>
-            I am also passionate about Elixir and the Phoenix framework, and enjoy getting my
-            hands dirty with Linux, shell scripting and servers!
-        </p>
-        <p>
-            You are invited to:
-            <ul class="biglist pl-3 border-secondary border-left">
-                <li>
-                    <%= link_to(portfolio_path) do %>
-                        <i class="fas fa-wrench rounded-circle bg-grey0"></i> Take a look at my work
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to(static_aboutme_path) do %>
-                        <i class="fas fa-question rounded-circle bg-grey0"></i> Find out more about me
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to(posts_path) do %>
-                        <i class="fas fa-lightbulb rounded-circle bg-grey0 mx-auto"></i> Learn something new
-                    <% end %>
-                </li>
-            </ul>
-
-        </p>
-    </div>
-    <div class="col-12 col-lg-6">
-        <%= render 'layouts/lgimage', locals: {folder: "static", filename: "bwface.jpg"} %>
-    </div>
+  <div class="col-12 col-lg-6">
+    <h1>Welcome!</h1>
+    <p>
+      I am Alan Vardy, an Elixir Developer out of Victoria, British Columbia, Canada.
+    </p>
+    <p>
+      I love building performant real-time web applications with Phoenix, Phoenix LiveView and all the wonderous things provided out of the box by <%= link_to 'Erlang\'s OTP', 'https://en.wikipedia.org/wiki/Open_Telecom_Platform', "target": "_blank" %>.
+    </p>
+    <p>
+      You are invited to:
+      <ul class="biglist pl-3 border-secondary border-left">
+        <li>
+          <%= link_to(portfolio_path) do %>
+            <i class="fas fa-wrench rounded-circle bg-grey0"></i> Take a look at my work
+          <% end %>
+        </li>
+        <li>
+          <%= link_to(static_aboutme_path) do %>
+            <i class="fas fa-question rounded-circle bg-grey0"></i> Find out more about me
+          <% end %>
+        </li>
+        <li>
+          <%= link_to(posts_path) do %>
+            <i class="fas fa-lightbulb rounded-circle bg-grey0 mx-auto"></i> Learn something new
+          <% end %>
+        </li>
+      </ul>
+    </p>
+  </div>
+  <div class="col-12 col-lg-6">
+    <%= render 'layouts/lgimage', locals: {folder: "static", filename: "bwface.jpg"} %>
+  </div>
 </div>
