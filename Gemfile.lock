@@ -137,7 +137,7 @@ GEM
     execjs (2.7.0)
     faker (2.10.0)
       i18n (>= 1.6, < 1.8)
-    fasterer (0.8.1)
+    fasterer (0.8.2)
       colorize (~> 0.7)
       ruby_parser (>= 3.14.1)
     ffi (1.11.3)
