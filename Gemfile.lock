@@ -355,7 +355,7 @@ GEM
       sorbet-static (= 0.5.5258)
     sorbet-rails (0.5.9.1)
       parlour (~> 1.0)
-    sorbet-runtime (0.5.5258)
+    sorbet-runtime (0.5.5369)
     sorbet-static (0.5.5258-universal-darwin-14)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
